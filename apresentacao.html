@@ -1,0 +1,2195 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kumbustivel do Saci - OnlyFans Profile</title>
+    <link rel="icon" type="image/png" href="of_logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+    <style>
+        /* Importa a fonte */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap');
+
+        /* === Cores (Tema) === */
+        :root {
+            --of-blue: #00aff0;
+            --of-dark-bg: #121212;
+            --of-card-bg: #1e1e1e;
+            --of-header-bg: #1a1a1a;
+            --of-text: #ffffff;
+            --of-text-light: #b0b0b0;
+            --of-border: #333333;
+            --of-red: #ff3366; 
+        }
+
+        /* === Configuração Geral === */
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--of-dark-bg);
+            color: var(--of-text);
+            overflow: hidden; 
+        }
+
+        /* === Scrollbar Customizada === */
+        ::-webkit-scrollbar {
+            width: 8px;
+            height: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: var(--of-dark-bg);
+        }
+        ::-webkit-scrollbar-thumb {
+            background: var(--of-border);
+            border-radius: 4px;
+            transition: background 0.3s ease;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #555555;
+        }
+        /* Para Firefox */
+        * {
+            scrollbar-width: thin;
+            scrollbar-color: var(--of-border) var(--of-dark-bg);
+        }
+
+        /* === Container Principal da "Página" === */
+        .of-container {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* === Header Superior === */
+        .top-header {
+            display: flex;
+            align-items: center;
+            padding: 15px 30px;
+            background-color: var(--of-header-bg);
+            border-bottom: 1px solid var(--of-border);
+            flex-shrink: 0;
+            z-index: 10;
+        }
+        .top-header img.logo {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            border: 2px solid var(--of-blue);
+            margin-right: 15px;
+            object-fit: cover;
+            content: url('logo.png'); /* Tenta carregar a imagem local */
+            background-color: #fff; 
+        }
+        .top-header .title {
+            font-weight: 900;
+            color: var(--of-text);
+            font-size: 1.3rem;
+        }
+        .top-header .search-bar {
+            margin-left: auto;
+            position: relative;
+        }
+        .top-header .search-bar input {
+            background-color: var(--of-card-bg);
+            border: 1px solid var(--of-border);
+            border-radius: 50px;
+            padding: 8px 15px 8px 40px;
+            color: var(--of-text);
+            width: 250px;
+        }
+        .top-header .search-bar i {
+            position: absolute;
+            left: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--of-text-light);
+        }
+
+        /* === Layout Principal (3 Colunas) === */
+        .main-layout {
+            display: grid;
+            grid-template-columns: 280px 1fr 320px; 
+            height: 100vh; 
+            overflow: hidden;
+        }
+
+        /* === Sidebar Esquerda (Navegação OnlyFans) === */
+        .sidebar-left {
+            background-color: var(--of-header-bg);
+            border-right: 1px solid var(--of-border);
+            padding: 20px 0; 
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .sidebar-left .tm-logo {
+            width: 40px;
+            height: 40px;
+            background-color: var(--of-blue);
+            color: var(--of-text);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            font-size: 1.2rem;
+            font-weight: 900;
+            margin-bottom: 25px;
+        }
+        .sidebar-left .nav-item {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            padding: 15px 30px;
+            color: var(--of-text-light);
+            text-decoration: none;
+            font-size: 1.1rem;
+            transition: color 0.2s ease, background-color 0.2s ease;
+        }
+        .sidebar-left .nav-item i {
+            margin-right: 15px;
+            font-size: 1.3rem;
+            width: 25px; 
+            text-align: center;
+        }
+        .sidebar-left .nav-item:hover, .sidebar-left .nav-item.active {
+            color: var(--of-blue);
+            background-color: var(--of-card-bg);
+        }
+        .sidebar-left .new-post-btn {
+            background-color: var(--of-blue); 
+            color: var(--of-text);
+            border: none;
+            border-radius: 50px;
+            padding: 12px 25px;
+            font-family: 'Inter', sans-serif;
+            font-size: 1rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: background-color 0.2s ease;
+            margin-top: 30px;
+            width: 80%;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .sidebar-left .new-post-btn i {
+            margin-right: 10px;
+        }
+        .sidebar-left .new-post-btn:hover {
+            background-color: #00c9ff;
+        }
+
+        /* === Feed Principal (Centro) === */
+        .main-feed-area {
+            overflow-y: auto; /* Apenas o feed rola */
+            padding-bottom: 30px; 
+        }
+        .profile-banner {
+            width: 100%;
+            height: 250px;
+            background-image: url('background.png');
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            filter: blur(3px);
+        }
+
+        .profile-banner::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(180deg, rgba(18, 18, 18, 0) 0%, rgba(18, 18, 18, 0.8) 100%);
+        }
+
+        .profile-header-content {
+            padding: 0 40px;
+            margin-top: -80px; 
+            position: relative;
+            z-index: 2;
+        }
+        .profile-avatar {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            border: 5px solid var(--of-dark-bg);
+            background-color: var(--of-card-bg);
+            background-image: url('logo.png');
+            background-size: cover;
+            display: inline-block;
+        }
+        .profile-info {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+        .profile-text-info .name {
+            font-size: 2rem;
+            font-weight: 900;
+            color: var(--of-text);
+            line-height: 1.2;
+        }
+        .profile-text-info .username {
+            font-size: 1.1rem;
+            color: var(--of-blue);
+            margin-top: 5px;
+        }
+        .profile-description {
+            color: var(--of-text-light);
+            margin-top: 15px;
+            font-size: 1rem;
+            line-height: 1.6;
+            max-width: 700px;
+        }
+        .profile-stats-grid {
+            display: grid;
+            grid-template-columns: 1fr; 
+            gap: 20px;
+            margin-top: 30px;
+            margin-bottom: 40px;
+        }
+        .profile-stat-card {
+            background-color: var(--of-card-bg);
+            border: 1px solid var(--of-border);
+            border-radius: 8px;
+            padding: 20px;
+        }
+        .profile-stat-card h3 {
+            font-size: 1.2rem;
+            color: var(--of-blue);
+            margin-bottom: 15px;
+        }
+        .profile-stat-card .grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            margin-top: 10px;
+        }
+        .profile-stat-card .grid-item {
+            background-color: var(--of-dark-bg);
+            padding: 10px;
+            border-radius: 5px;
+            text-align: center;
+            font-size: 0.9rem;
+            color: var(--of-text-light);
+            border: 1px solid #444;
+        }
+        .profile-stat-card .grid-item strong {
+            display: block;
+            color: var(--of-text);
+            font-size: 1.1rem;
+        }
+       
+        /* --- Posts no Feed --- */
+        .feed-posts {
+            padding: 0 40px; /* Alinha com o conteúdo do perfil */
+        }
+        .feed-posts h2 {
+            font-size: 1.8rem;
+            color: var(--of-blue);
+            margin-bottom: 30px;
+            margin-top: 30px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid var(--of-border);
+        }
+        .post {
+            background: var(--of-card-bg);
+            border-radius: 8px;
+            margin-bottom: 25px;
+            border: 1px solid var(--of-border);
+            overflow: hidden;
+        }
+        .post-header {
+            display: flex;
+            align-items: center;
+            padding: 15px 20px;
+            background-color: var(--of-header-bg);
+        }
+        .post-header img {
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            margin-right: 15px;
+            background-size: cover;
+        }
+        .post-header .name {
+            font-weight: 700;
+            font-size: 1.1rem;
+        }
+        .post-header .timestamp {
+            font-size: 0.9rem;
+            color: var(--of-text-light);
+        }
+        .post-content {
+            padding: 20px 25px 25px 25px;
+        }
+        .post-content h3 {
+            font-size: 1.5rem;
+            color: var(--of-blue);
+            margin-bottom: 20px;
+        }
+        .post-content ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        .post-content li {
+            font-size: 1.1rem;
+            color: var(--of-text-light);
+            padding: 14px 0;
+            border-bottom: 1px solid var(--of-border);
+            display: flex;
+            justify-content: space-between;
+        }
+        .post-content li:last-child {
+            border-bottom: none;
+        }
+        .post-content li strong {
+            color: var(--of-text);
+            margin-right: 10px;
+            flex-shrink: 0;
+        }
+        .post-content li span {
+            text-align: right;
+        }
+
+        /* NOVO: Estilo para Imagem do Post */
+        .post-image {
+            width: 100%;
+            max-height: 600px; /* Limita a altura da imagem */
+            object-fit: contain; /* Mostra a imagem inteira */
+            border-radius: 8px;
+            margin-top: 15px;
+            background-color: #000; /* Fundo preto, como no exemplo */
+        }
+        
+        /* NOVO: Estilo para Ações do Post */
+        .post-actions {
+            display: flex;
+            gap: 25px;
+            padding: 15px 25px;
+            border-top: 1px solid var(--of-border);
+            color: var(--of-text-light);
+            font-size: 1.1rem;
+        }
+        .post-actions .action-item {
+            cursor: pointer;
+            transition: color 0.2s ease;
+        }
+        .post-actions .action-item:hover {
+            color: var(--of-blue);
+        }
+        .post-actions .action-item i {
+            margin-right: 8px;
+        }
+
+        /* === Sidebar Direita (Perfis Sugeridos) === */
+        .sidebar-right {
+            background-color: var(--of-header-bg);
+            border-left: 1px solid var(--of-border);
+            padding: 30px 20px;
+            overflow-y: auto;
+        }
+        .sidebar-right h2 {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: var(--of-text);
+            margin-bottom: 20px;
+        }
+        
+        .profile-list-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            padding: 10px;
+            border-radius: 8px;
+            transition: background-color 0.2s ease;
+        }
+        .profile-list-item:hover {
+            background-color: var(--of-card-bg);
+        }
+        .profile-list-item .pfp {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin-right: 15px;
+            background-color: #555;
+            background-size: cover;
+        }
+        .profile-list-item .info {
+            flex-grow: 1;
+        }
+        .profile-list-item .name {
+            font-size: 1rem;
+            font-weight: 700;
+            color: var(--of-text);
+        }
+        .profile-list-item .username {
+            font-size: 0.9rem;
+            color: var(--of-blue);
+        }
+        .follow-btn {
+            background-color: var(--of-blue);
+            color: var(--of-text);
+            border: none;
+            border-radius: 50px;
+            padding: 8px 15px;
+            font-family: 'Inter', sans-serif;
+            font-size: 0.9rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+        .follow-btn:hover {
+            background-color: var(--of-text);
+            color: var(--of-blue);
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="of-container">
+
+        <div class="main-layout">
+
+            <aside class="sidebar-left">
+                <div class="tm-logo">TM</div>
+                <a href="#" class="nav-item active"><i class="fas fa-home"></i> Home</a>
+                <a href="#" class="nav-item"><i class="fas fa-bell"></i> Notificações</a>
+                <a href="#" class="nav-item"><i class="fas fa-envelope"></i> Mensagens</a>
+                <a href="#" class="nav-item"><i class="fas fa-bookmark"></i> Coleções</a>
+                <a href="#" class="nav-item"><i class="fas fa-users"></i> Assinaturas</a>
+                <a href="#" class="nav-item"><i class="fas fa-credit-card"></i> Adicionar Cartão</a>
+                <a href="#" class="nav-item"><i class="fas fa-user"></i> Meu Perfil</a>
+                <a href="#" class="nav-item"><i class="fas fa-ellipsis-h"></i> Mais</a>
+                <button class="new-post-btn"><i class="fas fa-plus-circle"></i> Novo Post</button>
+            </aside>
+
+            <main class="main-feed-area">
+                <div class="profile-banner"></div>
+                <div class="profile-header-content">
+                    <div class="profile-avatar"></div>
+                    <div class="profile-info">
+                        <div class="profile-text-info">
+                            <div class="name">Kumbustivel do Saci <i class="fas fa-check-circle" style="color: var(--of-blue); font-size: 1.5rem; margin-left: 8px;"></i></div>
+                            <div class="username">@kumbustivel_saci</div>
+                            <div style="margin-top: 10px; color: var(--of-text); font-size: 0.95rem;">
+                                <span style="margin-right: 20px;"><strong>315</strong> Posts</span>
+                                <span style="margin-right: 20px;"><strong>38.2K</strong> Likes</span>
+                                <span><strong>84.9K</strong> Fans</span>
+                            </div>
+                        </div>
+                        <div style="display: flex; gap: 10px; align-items: center;">
+                            <button style="background-color: transparent; border: none; color: var(--of-blue); font-size: 1.5rem; cursor: pointer;">
+                                <i class="far fa-star"></i>
+                            </button>
+                            <button style="background-color: transparent; border: none; color: var(--of-blue); font-size: 1.5rem; cursor: pointer;">
+                                <i class="fas fa-share-alt"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <p class="profile-description">
+                        ✨ Liderança em Diferenciação ✨<br>
+                        Nossa missão é entregar biocombustível de alta qualidade,<br>
+                        promovendo a sustentabilidade e inovação no mercado. 💋
+                    </p>
+                    <div style="margin-top: 20px;">
+                        <a href="#" style="color: var(--of-blue); text-decoration: none; font-weight: 500;">More info</a>
+                    </div>
+                    <div style="display: flex; gap: 15px; margin-top: 20px; flex-wrap: wrap;">
+                        <a href="#" style="display: inline-flex; align-items: center; gap: 8px; padding: 8px 16px; background-color: var(--of-card-bg); border-radius: 50px; text-decoration: none; color: var(--of-text); border: 1px solid var(--of-border);">
+                            <i class="fab fa-instagram" style="color: #E4405F;"></i> Instagram
+                        </a>
+                        <a href="#" style="display: inline-flex; align-items: center; gap: 8px; padding: 8px 16px; background-color: var(--of-card-bg); border-radius: 50px; text-decoration: none; color: var(--of-text); border: 1px solid var(--of-border);">
+                            <i class="fab fa-youtube" style="color: #FF0000;"></i> Youtube
+                        </a>
+                        <a href="#" style="display: inline-flex; align-items: center; gap: 8px; padding: 8px 16px; background-color: var(--of-card-bg); border-radius: 50px; text-decoration: none; color: var(--of-text); border: 1px solid var(--of-border);">
+                            <i class="fab fa-snapchat" style="color: #FFFC00;"></i> Snapchat
+                        </a>
+                        <a href="#" style="display: inline-flex; align-items: center; gap: 8px; padding: 8px 16px; background-color: var(--of-card-bg); border-radius: 50px; text-decoration: none; color: var(--of-text); border: 1px solid var(--of-border);">
+                            <i class="fab fa-tiktok"></i> Tiktok
+                        </a>
+                        <a href="#" style="display: inline-flex; align-items: center; gap: 8px; padding: 8px 16px; background-color: var(--of-card-bg); border-radius: 50px; text-decoration: none; color: var(--of-text); border: 1px solid var(--of-border);">
+                            <i class="fab fa-x-twitter"></i> X
+                        </a>
+                    </div>
+
+                    <!-- Seção de Assinatura -->
+                    <div style="margin-top: 40px; margin-bottom: 40px;">
+                        <h3 style="font-size: 0.9rem; color: var(--of-text-light); margin-bottom: 15px; text-transform: uppercase; letter-spacing: 1px;">SUBSCRIPTION</h3>
+                        <button style="background-color: var(--of-blue); color: white; border: none; border-radius: 50px; padding: 14px 40px; font-size: 1.1rem; font-weight: 700; cursor: pointer; width: 100%; max-width: 600px; font-family: 'Inter', sans-serif; display: flex; align-items: center; justify-content: space-between;">
+                            <span>SUBSCRIBE</span>
+                            <span>FOR FREE</span>
+                        </button>
+                    </div>
+
+                    <!-- Tabs de navegação -->
+                    <div style="border-bottom: 1px solid var(--of-border); margin-bottom: 30px;">
+                        <div style="display: flex; gap: 40px;">
+                            <a href="#" style="text-decoration: none; color: var(--of-text); padding-bottom: 15px; border-bottom: 2px solid var(--of-blue); font-weight: 600;">
+                                315 POSTS
+                            </a>
+                            <a href="#" style="text-decoration: none; color: var(--of-text-light); padding-bottom: 15px; font-weight: 600;">
+                                MEDIA
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Filtros -->
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 30px;">
+                        <div style="display: flex; gap: 15px; align-items: center;">
+                            <span style="color: var(--of-text-light); font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px;">RECENT</span>
+                            <button style="background-color: var(--of-blue); color: white; border: none; border-radius: 50px; padding: 8px 16px; font-size: 0.9rem; font-weight: 600; cursor: pointer;">
+                                All 315
+                            </button>
+                            <button style="background-color: var(--of-card-bg); color: var(--of-text-light); border: 1px solid var(--of-border); border-radius: 50px; padding: 8px 16px; font-size: 0.9rem; font-weight: 600; cursor: pointer;">
+                                <i class="fas fa-video"></i> OFTV 1
+                            </button>
+                            <button style="background-color: var(--of-card-bg); color: var(--of-text-light); border: 1px solid var(--of-border); border-radius: 50px; padding: 8px 16px; font-size: 0.9rem; font-weight: 600; cursor: pointer;">
+                                Archive 3
+                            </button>
+                        </div>
+                        <div style="display: flex; gap: 15px;">
+                            <button style="background-color: transparent; border: none; color: var(--of-text-light); font-size: 1.2rem; cursor: pointer;">
+                                <i class="fas fa-search"></i>
+                            </button>
+                            <button style="background-color: transparent; border: none; color: var(--of-text-light); font-size: 1.2rem; cursor: pointer;">
+                                <i class="fas fa-th"></i>
+                            </button>
+                            <button style="background-color: transparent; border: none; color: var(--of-text-light); font-size: 1.2rem; cursor: pointer;">
+                                <i class="fas fa-sliders-h"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="feed-posts">
+
+                        <!-- Post com informações -->
+                        <div class="post">
+                            <div class="post-header">
+                                <img src="logo.png" alt="Kumbustivel do Saci">
+                                <div>
+                                    <div class="name">Kumbustivel do Saci</div>
+                                    <div class="timestamp">2025/02</div>
+                                </div>
+                            </div>
+                            <div class="post-content">
+                                <h3>🔥 Top 10 do Marketing Mais QUENTE 🔥</h3>
+                                <p style="color: var(--of-text-light); margin-bottom: 20px; font-size: 0.95rem;">
+                                    <em>Exclusivo para assinantes 18+ 💋 | Conteúdo Premium</em>
+                                </p>
+                                <ul>
+                                    <li>
+                                        <strong>🥇 1º - Os 4 P's Sensuais:</strong>
+                                        <span>Produto, Praça, Promoção, Preço... e muito PRAZER! 😏</span>
+                                    </li>
+                                    <li>
+                                        <strong>🔥 2º - Produto:</strong>
+                                        <span>Kumbustível Premium - Tão bom que vicia 💦</span>
+                                    </li>
+                                    <li>
+                                        <strong>📍 3º - Praça:</strong>
+                                        <span>Estamos em 3 regiões... queremos estar na sua também 😈</span>
+                                    </li>
+                                    <li>
+                                        <strong>💋 4º - Promoção:</strong>
+                                        <span>Marketing tão poderoso que vai te conquistar!</span>
+                                    </li>
+                                    <li>
+                                        <strong>💰 5º - Preço:</strong>
+                                        <span>Ofertas tão boas que você não vai resistir 🔥</span>
+                                    </li>
+                                    <li>
+                                        <strong>📈 6º - Evolução:</strong>
+                                        <span>Cada rodada mais intensa que a anterior... 😍</span>
+                                    </li>
+                                    <li>
+                                        <strong>💸 7º - Vendas nas áreas:</strong>
+                                        <span>SALE! Vamos te fazer delirar 🛍️✨</span>
+                                    </li>
+                                    <li>
+                                        <strong>💎 8º - Caixa e Lucro:</strong>
+                                        <span>Gestão financeira 💪</span>
+                                    </li>
+                                    <li>
+                                        <strong>👑 9º - Futuro empresarial:</strong>
+                                        <span>Vamos dominar o mundo sustentável... e seu coração 💚</span>
+                                    </li>
+                                    <li>
+                                        <strong>🌍 10º - Futuro do Planeta:</strong>
+                                        <span>Energia limpa que aquece de maneiras diferentes 🔥🌿</span>
+                                    </li>
+                                </ul>
+                                <div style="text-align: center; padding: 40px 30px; background-color: rgba(255,255,255,0.03); border-radius: 8px; margin-top: 30px;">
+                                    <i class="fas fa-lock" style="font-size: 3.5rem; color: var(--of-text-light); opacity: 0.5; margin-bottom: 20px; display: block;"></i>
+                                    <button style="background-color: var(--of-blue); color: white; border: none; border-radius: 50px; padding: 14px 50px; font-size: 1rem; font-weight: 700; cursor: pointer; width: 100%; max-width: 500px; font-family: 'Inter', sans-serif; transition: background-color 0.2s ease;">
+                                        SUBSCRIBE TO SEE USER'S POSTS
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="post-actions">
+                                <div class="action-item">
+                                    <i class="far fa-heart"></i> 1335 likes
+                                </div>
+                                <div class="action-item">
+                                    <i class="far fa-comment"></i> Comment
+                                </div>
+                                <div class="action-item">
+                                    <i class="fas fa-dollar-sign"></i> SEND TIP
+                                </div>
+                                <div class="action-item" style="margin-left: auto;">
+                                    <i class="far fa-bookmark"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Segundo Post - Apresentação Kumbustível do Saci -->
+                        <div class="post">
+                            <div class="post-header">
+                                <img src="logo.png" alt="Kumbustivel do Saci">
+                                <div>
+                                    <div class="name">Kumbustivel do Saci</div>
+                                    <div class="timestamp">2025/02</div>
+                                </div>
+                            </div>
+                            <div class="post-content">
+                                <h3>Kumbustível do Saci</h3>
+                                <p style="color: var(--of-text-light); margin-bottom: 25px; font-size: 1rem; line-height: 1.8;">
+                                    O biocombustível que move o futuro do planeta e a economia do seu bolso.
+                                </p>
+
+                                <p style="color: var(--of-text-light); margin-bottom: 20px; font-size: 1rem; line-height: 1.8;">
+                                    <strong style="color: var(--of-text);">Empresa revolucionária na produção e venda de Biocombustível em todo país.</strong>
+                                </p>
+                                <p style="color: var(--of-text-light); margin-bottom: 25px; font-size: 1rem; line-height: 1.8;">
+                                    🔥 Após uma descoberta química REVOLUCIONÁRIA pelas universidades paranaenses (UTFPR, UFPR e Unioeste), empresas estão bombando a produção de biocombustível com essa patente quente! O país tá no auge: dívida despencando, privatizações recorde, moeda firme, juros no mínimo histórico — e investimento estrangeiro jorrando! Autoridades e líderes festejando o avanço épico! 💥
+                                </p>
+                                
+                                <p style="color: var(--of-text-light); margin-bottom: 20px; font-size: 1rem; line-height: 1.8;">
+                                    <strong style="color: var(--of-text);">Acelere para um amanhã sustentável!</strong>
+                                </p>
+
+                                <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 15px; margin-top: 25px;">
+                                    <div style="background-color: rgba(0,175,240,0.1); padding: 15px; border-radius: 8px; border: 1px solid var(--of-border);">
+                                        <img src="https://media.assettype.com/indiawaterportal%2Fimport%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Fimage_1200x675%2Fpublic%2F2023-09%2FBiofuels.svg_.png?w=480&auto=format%2Ccompress&fit=max" style="width: 100%; border-radius: 5px; margin-bottom: 10px;">
+                                        <p style="color: var(--of-text); font-size: 0.9rem; text-align: center;">🌱 Biocombustível Premium</p>
+                                    </div>
+                                    <div style="background-color: rgba(0,175,240,0.1); padding: 15px; border-radius: 8px; border: 1px solid var(--of-border);">
+                                        <img src="logo.png" style="width: 100%; border-radius: 5px; margin-bottom: 10px;">
+                                        <p style="color: var(--of-text); font-size: 0.9rem; text-align: center;">🏢 Kumbustível do Saci</p>
+                                    </div>
+                                    <div style="background-color: rgba(0,175,240,0.1); padding: 15px; border-radius: 8px; border: 1px solid var(--of-border);">
+                                        <img src="https://cdn.prod.website-files.com/663280520741d8d0542a5477/66b0e51f61c5bf9944316528_IND.png" style="width: 100%; border-radius: 5px; margin-bottom: 10px;">
+                                        <p style="color: var(--of-text); font-size: 0.9rem; text-align: center;">🏭 OGG Indústria</p>
+                                    </div>
+                                    <div style="background-color: rgba(0,175,240,0.1); padding: 15px; border-radius: 8px; border: 1px solid var(--of-border);">
+                                        <img src="https://cdn.prod.website-files.com/663280520741d8d0542a5477/66b0e4f1bffe80a36775943d_IB.png" style="width: 100%; border-radius: 5px; margin-bottom: 10px;">
+                                        <p style="color: var(--of-text); font-size: 0.9rem; text-align: center;">🗺️ 3 Regiões de Atuação</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="post-actions">
+                                <div class="action-item">
+                                    <i class="far fa-heart"></i> 2847 likes
+                                </div>
+                                <div class="action-item">
+                                    <i class="far fa-comment"></i> Comment
+                                </div>
+                                <div class="action-item">
+                                    <i class="fas fa-dollar-sign"></i> SEND TIP
+                                </div>
+                                <div class="action-item" style="margin-left: auto;">
+                                    <i class="far fa-bookmark"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Terceiro Post - Análise dos 4 P's: PRODUTO -->
+                        <div class="post">
+                            <div class="post-header">
+                                <img src="logo.png" alt="Kumbustivel do Saci">
+                                <div>
+                                    <div class="name">Kumbustivel do Saci</div>
+                                    <div class="timestamp">2025/02</div>
+                                </div>
+                            </div>
+                            <div class="post-content">
+                                <h3>📊 ANÁLISE DOS 4 P´s - PRODUTO</h3>
+                                <p style="color: var(--of-text-light); margin-bottom: 25px; font-size: 1rem; line-height: 1.8;">
+                                    <strong style="color: var(--of-text);">O biocombustível da Kumbustível do Saci é puro fogo: eficiente, sustentável e viciante de tão bom! 🔥💦</strong> Escolhendo nosso produto, você sente aquela satisfação intensa, com a consciência limpa e o corpo aquecido!
+                                </p>
+
+                                <!-- Infográfico do Processo -->
+                                <div style="background: linear-gradient(135deg, rgba(0,175,240,0.1) 0%, rgba(0,175,240,0.05) 100%); padding: 30px; border-radius: 12px; border: 1px solid var(--of-border); margin: 25px 0;">
+                                    <h4 style="color: var(--of-blue); font-size: 1.3rem; margin-bottom: 25px; text-align: center;">🌱 Da Natureza ao Tanque</h4>
+                                    
+                                    <div style="display: flex; align-items: center; justify-content: space-around; flex-wrap: wrap; gap: 20px;">
+                                        <!-- Etapa 1: Fonte de energia -->
+                                        <div style="text-align: center; flex: 1; min-width: 150px;">
+                                            <div style="width: 80px; height: 80px; margin: 0 auto 15px; background-color: var(--of-card-bg); border-radius: 50%; display: flex; align-items: center; justify-content: center; border: 3px solid #4CAF50;">
+                                                <span style="font-size: 2.5rem;">🌿</span>
+                                            </div>
+                                            <p style="color: var(--of-text); font-weight: 600; margin-bottom: 5px;">Fonte de energia</p>
+                                            <p style="color: var(--of-text-light); font-size: 0.85rem;">O₂</p>
+                                        </div>
+
+                                        <div style="color: var(--of-blue); font-size: 2rem;">→</div>
+
+                                        <!-- Etapa 2: Processamento -->
+                                        <div style="text-align: center; flex: 1; min-width: 150px;">
+                                            <div style="width: 80px; height: 80px; margin: 0 auto 15px; background-color: var(--of-card-bg); border-radius: 50%; display: flex; align-items: center; justify-content: center; border: 3px solid #FF9800;">
+                                                <span style="font-size: 2.5rem;">🏭</span>
+                                            </div>
+                                            <p style="color: var(--of-text); font-weight: 600; margin-bottom: 5px;">Processamento</p>
+                                            <p style="color: var(--of-text-light); font-size: 0.85rem;">da biomassa</p>
+                                        </div>
+
+                                        <div style="color: var(--of-blue); font-size: 2rem;">→</div>
+
+                                        <!-- Etapa 3: Produtos agrícolas -->
+                                        <div style="text-align: center; flex: 1; min-width: 150px;">
+                                            <div style="width: 80px; height: 80px; margin: 0 auto 15px; background-color: var(--of-card-bg); border-radius: 50%; display: flex; align-items: center; justify-content: center; border: 3px solid #8BC34A;">
+                                                <span style="font-size: 2.5rem;">📦</span>
+                                            </div>
+                                            <p style="color: var(--of-text); font-weight: 600; margin-bottom: 5px;">Produtos agrícolas</p>
+                                            <p style="color: var(--of-text-light); font-size: 0.85rem;">em natura ou processados</p>
+                                        </div>
+
+                                        <div style="color: var(--of-blue); font-size: 2rem;">→</div>
+
+                                        <!-- Etapa 4: Biocombustível -->
+                                        <div style="text-align: center; flex: 1; min-width: 150px;">
+                                            <div style="width: 80px; height: 80px; margin: 0 auto 15px; background-color: var(--of-card-bg); border-radius: 50%; display: flex; align-items: center; justify-content: center; border: 3px solid #00aff0;">
+                                                <span style="font-size: 2.5rem;">⛽</span>
+                                            </div>
+                                            <p style="color: var(--of-text); font-weight: 600; margin-bottom: 5px;">Biocombustível</p>
+                                            <p style="color: var(--of-text-light); font-size: 0.85rem;">🌱</p>
+                                        </div>
+                                    </div>
+
+                                    <div style="margin-top: 25px; padding: 15px; background-color: rgba(0,0,0,0.2); border-radius: 8px; text-align: center;">
+                                        <p style="color: var(--of-text-light); font-size: 0.95rem; line-height: 1.6;">
+                                            <strong style="color: var(--of-text);">Fotossíntese:</strong> consumo do biocombustível e liberação de gases
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="post-actions">
+                                <div class="action-item">
+                                    <i class="far fa-heart"></i> 3521 likes
+                                </div>
+                                <div class="action-item">
+                                    <i class="far fa-comment"></i> Comment
+                                </div>
+                                <div class="action-item">
+                                    <i class="fas fa-dollar-sign"></i> SEND TIP
+                                </div>
+                                <div class="action-item" style="margin-left: auto;">
+                                    <i class="far fa-bookmark"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Quarto Post - PRAÇA: Distribuição Regional -->
+                        <div class="post">
+                            <div class="post-header">
+                                <img src="logo.png" alt="Kumbustivel do Saci">
+                                <div>
+                                    <div class="name">Kumbustivel do Saci</div>
+                                    <div class="timestamp">2025/02</div>
+                                </div>
+                            </div>
+                            <div class="post-content">
+                                <h3>📍 PRAÇA - Estratégia de Distribuição</h3>
+                                <p style="color: var(--of-text-light); margin-bottom: 30px; font-size: 1rem; line-height: 1.8;">
+                                    Nossa estratégia de distribuição abrange <strong style="color: var(--of-text);">3 regiões estratégicas</strong> (Regiões 1, 3 e 4), garantindo presença estratégica e atendimento de qualidade premium.
+                                </p>
+
+                                <!-- Grid das 3 Regiões -->
+                                <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin-bottom: 30px;">
+                                    
+                                    <!-- Região 04 -->
+                                    <div style="position: relative; background: linear-gradient(135deg, #9C27B0 0%, #7B1FA2 100%); padding: 25px; border-radius: 12px; text-align: center; border: 2px solid #BA68C8;">
+                                        <div style="position: absolute; top: 15px; right: 15px; background-color: rgba(255,255,255,0.2); padding: 5px 12px; border-radius: 50px; font-size: 0.85rem; font-weight: 700;">04</div>
+                                        <div style="font-size: 3rem; margin-bottom: 15px;"><img src="Regiao 4.png" alt="Indústria"></div>
+                                        <h4 style="color: white; font-size: 1.3rem; margin-bottom: 15px; font-weight: 900;">REGIÃO 4</h4>
+                                        <p style="color: rgba(255,255,255,0.9); font-size: 0.95rem; line-height: 1.6; margin-bottom: 15px;">
+                                            A nossa empresa está situada na Região 4, Região atrativa pelo seu polo tecnológico e apresenta a segunda maior demanda.
+                                        </p>
+                                        <div style="background-color: rgba(255,255,255,0.15); padding: 10px; border-radius: 8px; margin-top: 15px;">
+                                            <p style="color: white; font-size: 0.85rem; font-weight: 600;">✨ Base de Operações</p>
+                                        </div>
+                                    </div>
+
+                                    <!-- Região 04 -->
+                                    <div style="position: relative; background: linear-gradient(135deg, #D81B60 0%, #C2185B 100%); padding: 25px; border-radius: 12px; text-align: center; border: 2px solid #F06292;">
+                                        <div style="position: absolute; top: 15px; right: 15px; background-color: rgba(255,255,255,0.2); padding: 5px 12px; border-radius: 50px; font-size: 0.85rem; font-weight: 700;">04</div>
+                                        <div style="font-size: 3rem; margin-bottom: 15px;"><img src="Regiao 4.png" alt="Indústria"></div>
+                                        <h4 style="color: white; font-size: 1.3rem; margin-bottom: 15px; font-weight: 900;">REGIÃO 4</h4>
+                                        <p style="color: rgba(255,255,255,0.9); font-size: 0.95rem; line-height: 1.6; margin-bottom: 15px;">
+                                            A região de liderança escolhida é a Região 4, uma delícia atrativa com jovens sedutores de mente aberta, alto nível tecnológico que deixa tudo mais quente e facilita nossas vendas irresistíveis! 🔥😏
+                                        </p>
+                                        <div style="background-color: rgba(255,255,255,0.15); padding: 10px; border-radius: 8px; margin-top: 15px;">
+                                            <p style="color: white; font-size: 0.85rem; font-weight: 600;">🎯 Mercado Principal</p>
+                                        </div>
+                                    </div>
+
+                                    <!-- Região 01 -->
+                                    <div style="position: relative; background: linear-gradient(135deg, #8BC34A 0%, #689F38 100%); padding: 25px; border-radius: 12px; text-align: center; border: 2px solid #AED581;">
+                                        <div style="position: absolute; top: 15px; right: 15px; background-color: rgba(255,255,255,0.2); padding: 5px 12px; border-radius: 50px; font-size: 0.85rem; font-weight: 700;">01</div>
+                                        <div style="font-size: 3rem; margin-bottom: 15px;"><img src="Regiao 1.png" alt="Indústria"></div>
+                                        <h4 style="color: white; font-size: 1.3rem; margin-bottom: 15px; font-weight: 900;">REGIÃO 1</h4>
+                                        <p style="color: rgba(255,255,255,0.9); font-size: 0.95rem; line-height: 1.6; margin-bottom: 15px;">
+                                            Mas é na Região 1 onde nosso combustível realmente acelera o fogo, com uma população mais velha que que deve buscar uma fonte de chama nova e aumenta nossa demanda! 🔥💋
+                                        </p>
+                                        <div style="background-color: rgba(255,255,255,0.15); padding: 10px; border-radius: 8px; margin-top: 15px;">
+                                            <p style="color: white; font-size: 0.85rem; font-weight: 600;">📈 Alta Demanda</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Resumo da Estratégia -->
+                                <div style="background: linear-gradient(135deg, rgba(0,175,240,0.15) 0%, rgba(0,175,240,0.05) 100%); padding: 25px; border-radius: 12px; border-left: 4px solid var(--of-blue); margin-top: 30px;">
+                                    <h4 style="color: var(--of-blue); font-size: 1.2rem; margin-bottom: 15px;">🗺️ Cobertura Estratégica</h4>
+                                    <ul style="list-style: none; padding: 0;">
+                                        <li style="color: var(--of-text-light); padding: 10px 0; border-bottom: 1px solid var(--of-border); display: flex; align-items: center;">
+                                            <span style="color: var(--of-blue); margin-right: 10px; font-size: 1.2rem;">✓</span>
+                                            <span><strong style="color: var(--of-text);">Região 4:</strong> Base de produção e mercado principal (11,59% participação na R4) 🏭</span>
+                                        </li>
+                                        <li style="color: var(--of-text-light); padding: 10px 0; border-bottom: 1px solid var(--of-border); display: flex; align-items: center;">
+                                            <span style="color: var(--of-blue); margin-right: 10px; font-size: 1.2rem;">✓</span>
+                                            <span><strong style="color: var(--of-text);">Região 1:</strong> Mercado em expansão (5,85% na R3 → 11,59% na R4) 📈</span>
+                                        </li>
+                                        <li style="color: var(--of-text-light); padding: 10px 0; display: flex; align-items: center;">
+                                            <span style="color: var(--of-blue); margin-right: 10px; font-size: 1.2rem;">✓</span>
+                                            <span><strong style="color: var(--of-text);">Região 3:</strong> Presença estratégica complementar (0,85% na R3) 🎯</span>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div style="text-align: center; padding: 40px 30px; background-color: rgba(255,255,255,0.03); border-radius: 8px; margin-top: 30px;">
+                                    <i class="fas fa-lock" style="font-size: 3.5rem; color: var(--of-text-light); opacity: 0.5; margin-bottom: 20px; display: block;"></i>
+                                    <button style="background-color: var(--of-blue); color: white; border: none; border-radius: 50px; padding: 14px 50px; font-size: 1rem; font-weight: 700; cursor: pointer; width: 100%; max-width: 500px; font-family: 'Inter', sans-serif; transition: background-color 0.2s ease;">
+                                        SUBSCRIBE TO SEE USER'S POSTS
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="post-actions">
+                                <div class="action-item">
+                                    <i class="far fa-heart"></i> 4182 likes
+                                </div>
+                                <div class="action-item">
+                                    <i class="far fa-comment"></i> Comment
+                                </div>
+                                <div class="action-item">
+                                    <i class="fas fa-dollar-sign"></i> SEND TIP
+                                </div>
+                                <div class="action-item" style="margin-left: auto;">
+                                    <i class="far fa-bookmark"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Quinto Post - PROMOÇÃO -->
+                        <div class="post">
+                            <div class="post-header">
+                                <img src="logo.png" alt="Kumbustivel do Saci">
+                                <div>
+                                    <div class="name">Kumbustivel do Saci</div>
+                                    <div class="timestamp">2025/02</div>
+                                </div>
+                            </div>
+                            <div class="post-content">
+                                <h3>📣 PROMOÇÃO - Estratégia de Marketing</h3>
+                                
+                                 <div style="position: relative; background: linear-gradient(135deg, #1a1a1a 0%, #0f0f0f 100%); padding: 35px; border-radius: 16px; margin-bottom: 30px; border: 2px solid var(--of-blue);">
+                                    <div style="text-align: center; margin-bottom: 30px;">
+                                        <h4 style="color: var(--of-blue); font-size: 1.5rem; margin-bottom: 10px;">💎 Por que você ME escolhe e não os outros? 💎</h4>
+                                        <p style="color: var(--of-text-light); font-size: 1rem; font-style: italic;">Tipo quando você assina meu OF e ignora os outros criadores... 😏🔥</p>
+                                    </div>
+                                    
+                                    <!-- Item 1: NÃO aos outros -->
+                                    <div style="display: grid; grid-template-columns: 100px 1fr; gap: 20px; align-items: center; margin-bottom: 25px; padding: 20px; background: linear-gradient(135deg, rgba(255,0,0,0.1) 0%, rgba(139,0,0,0.1) 100%); border-radius: 12px; border-left: 4px solid #ff3366;">
+                                        <div style="text-align: center; font-size: 4rem; opacity: 0.7;">
+                                            🙅‍♂️
+                                        </div>
+                                        <div>
+                                            <h5 style="color: #ff3366; font-size: 1.3rem; margin-bottom: 10px; font-weight: 900;">COMBUSTÍVEL DOS OUTROS</h5>
+                                            <p style="color: var(--of-text-light); font-size: 1rem; line-height: 1.6; margin: 0;">
+                                               "Xoxo, capenga, manco, frágil e inconsistente... igual conteúdo de criador sem exclusividade 🥱❌
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <!-- Item 2: SIM ao nosso! -->
+                                    <div style="display: grid; grid-template-columns: 100px 1fr; gap: 20px; align-items: center; padding: 25px; background: linear-gradient(135deg, rgba(0,175,240,0.2) 0%, rgba(0,255,127,0.2) 100%); border-radius: 12px; border-left: 4px solid var(--of-blue); box-shadow: 0 0 25px rgba(0,175,240,0.3);">
+                                        <div style="text-align: center; font-size: 4rem;">
+                                            😍
+                                        </div>
+                                        <div>
+                                            <h5 style="color: var(--of-blue); font-size: 1.4rem; margin-bottom: 12px; font-weight: 900;">KUMBUSTÍVEL DO SACI 🔥</h5>
+                                            <p style="color: var(--of-text); font-size: 1.05rem; line-height: 1.7; margin: 0;">
+                                                <strong>Sustentável, QUENTE, inovador, te faz sentir BEM!</strong> 💦✨<br>
+                                                É tipo aquele conteúdo PREMIUM exclusivo que você não encontra em nenhum outro lugar... só aqui, só comigo, só pra você! 💋🔥
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div style="text-align: center; margin-top: 30px; padding: 20px; background: rgba(0,175,240,0.1); border-radius: 12px;">
+                                        <p style="color: var(--of-blue); font-size: 1.2rem; font-weight: 700; margin-bottom: 10px;">
+                                            🎯 Você sabe que vale a pena <s style="opacity: 0.6;">assinar</s> <strong>comprar</strong> o melhor! 💎
+                                        </p>
+                                        <p style="color: var(--of-text-light); font-size: 0.95rem; margin: 0;">
+                                            Por isso você nos escolhe... e nós te escolhemos de volta 😘
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <p style="color: var(--of-text-light); margin-bottom: 25px; font-size: 1rem; line-height: 1.8;">
+                                    Nosso combustível não é para qualquer um – é <strong style="color: var(--of-text);">conteúdo exclusivo premium</strong> 💎. Desenvolvido com tecnologia de ponta e ingredientes de altíssima qualidade, oferecemos uma experiência <em>superior</em> que só quem valoriza o melhor pode apreciar. É o tipo de produto que te faz sentir especial... porque você <em>é</em> especial. 🔥
+                                </p>
+
+                                <p style="color: var(--of-text-light); margin-bottom: 25px; font-size: 1rem; line-height: 1.8;">
+                                    Investimos pesado em <strong style="color: var(--of-blue);">inovação tecnológica e diferenciação</strong> – nada de vendedor batendo na sua porta! Aqui é tudo digital, exclusivo e sofisticado. Nossos clientes não compram combustível, eles <em>assinam uma experiência premium</em> que deixa a concorrência no chinelo. 😏✨
+                                </p>
+
+                                <!-- Estratégias de Marketing -->
+                                <div style="background: linear-gradient(135deg, rgba(0,175,240,0.15) 0%, rgba(0,175,240,0.05) 100%); padding: 25px; border-radius: 12px; border-left: 4px solid var(--of-blue); margin-top: 30px;">
+                                    <h4 style="color: var(--of-blue); font-size: 1.2rem; margin-bottom: 15px;">✨ Nossas Estratégias Premium</h4>
+                                    <ul style="list-style: none; padding: 0;">
+                                        <li style="color: var(--of-text-light); padding: 10px 0; border-bottom: 1px solid var(--of-border); display: flex; align-items: center;">
+                                            <span style="color: var(--of-blue); margin-right: 10px; font-size: 1.2rem;">💎</span>
+                                            <span><strong style="color: var(--of-text);">Produto exclusivo e premium</strong> - Alta tecnologia para clientes exigentes</span>
+                                        </li>
+                                        <li style="color: var(--of-text-light); padding: 10px 0; border-bottom: 1px solid var(--of-border); display: flex; align-items: center;">
+                                            <span style="color: var(--of-blue); margin-right: 10px; font-size: 1.2rem;">�</span>
+                                            <span><strong style="color: var(--of-text);">Investimento em inovação</strong> - Tecnologia de ponta e diferenciação</span>
+                                        </li>
+                                        <li style="color: var(--of-text-light); padding: 10px 0; display: flex; align-items: center;">
+                                            <span style="color: var(--of-blue); margin-right: 10px; font-size: 1.2rem;">🌐</span>
+                                            <span><strong style="color: var(--of-text);">Experiência digital sofisticada</strong> - Plataforma exclusiva sem intermediários</span>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div style="text-align: center; padding: 40px 30px; background-color: rgba(255,255,255,0.03); border-radius: 8px; margin-top: 30px;">
+                                    <i class="fas fa-lock" style="font-size: 3.5rem; color: var(--of-text-light); opacity: 0.5; margin-bottom: 20px; display: block;"></i>
+                                    <button style="background-color: var(--of-blue); color: white; border: none; border-radius: 50px; padding: 14px 50px; font-size: 1rem; font-weight: 700; cursor: pointer; width: 100%; max-width: 500px; font-family: 'Inter', sans-serif; transition: background-color 0.2s ease;">
+                                        SUBSCRIBE TO SEE USER'S POSTS
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="post-actions">
+                                <div class="action-item">
+                                    <i class="far fa-heart"></i> 5936 likes
+                                </div>
+                                <div class="action-item">
+                                    <i class="far fa-comment"></i> Comment
+                                </div>
+                                <div class="action-item">
+                                    <i class="fas fa-dollar-sign"></i> SEND TIP
+                                </div>
+                                <div class="action-item" style="margin-left: auto;">
+                                    <i class="far fa-bookmark"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Sexto Post - PREÇO -->
+                        <div class="post">
+                            <div class="post-header">
+                                <img src="logo.png" alt="Kumbustivel do Saci">
+                                <div>
+                                    <div class="name">Kumbustivel do Saci</div>
+                                    <div class="timestamp">2025/02</div>
+                                </div>
+                            </div>
+                            <div class="post-content">
+                                <h3>💰 PREÇO - Evolução e Estratégia</h3>
+                                <p style="color: var(--of-text-light); margin-bottom: 25px; font-size: 1.05rem; line-height: 1.7;">
+                                    <strong style="color: var(--of-blue);">Análise 4s</strong> | 100% para você | 16+ | 2025/02
+                                </p>
+
+                                <!-- Gráfico de Evolução de Preço -->
+                                <div style="background: white; padding: 30px; border-radius: 12px; margin-bottom: 30px;">
+                                    <h4 style="color: #333; text-align: center; margin-bottom: 20px; font-size: 1.2rem;">Evolução de Preço por Região ($/litro)</h4>
+                                    <canvas id="chartPreco" style="max-height: 350px;"></canvas>
+                                </div>
+                                <script>
+                                (function() {
+                                    const ctx = document.getElementById('chartPreco');
+                                    if (ctx) {
+                                        new Chart(ctx, {
+                                            type: 'bar',
+                                            data: {
+                                                labels: ['Rodada 2', 'Rodada 3', 'Rodada 4'],
+                                                datasets: [
+                                                    {
+                                                        label: 'Região 1',
+                                                        data: [21.61, 23.5, 23.5],
+                                                        backgroundColor: '#7CB342',
+                                                        borderColor: '#558B2F',
+                                                        borderWidth: 2
+                                                    },
+                                                    {
+                                                        label: 'Região 3',
+                                                        data: [30.51, 23.5, 23.5],
+                                                        backgroundColor: '#8E24AA',
+                                                        borderColor: '#6A1B9A',
+                                                        borderWidth: 2
+                                                    },
+                                                    {
+                                                        label: 'Região 4',
+                                                        data: [18.56, 23.5, 23.5],
+                                                        backgroundColor: '#C2185B',
+                                                        borderColor: '#880E4F',
+                                                        borderWidth: 2
+                                                    }
+                                                ]
+                                            },
+                                            options: {
+                                                responsive: true,
+                                                maintainAspectRatio: true,
+                                                plugins: {
+                                                    legend: {
+                                                        display: true,
+                                                        position: 'bottom',
+                                                        labels: {
+                                                            color: '#333',
+                                                            font: { size: 13, weight: '600' },
+                                                            padding: 15
+                                                        }
+                                                    },
+                                                    tooltip: {
+                                                        backgroundColor: 'rgba(0,0,0,0.8)',
+                                                        padding: 12,
+                                                        titleFont: { size: 14, weight: '700' },
+                                                        bodyFont: { size: 13 },
+                                                        callbacks: {
+                                                            label: function(context) {
+                                                                return context.dataset.label + ': $' + context.parsed.y.toFixed(2) + '/litro';
+                                                            }
+                                                        }
+                                                    }
+                                                },
+                                                scales: {
+                                                    y: {
+                                                        beginAtZero: true,
+                                                        max: 35,
+                                                        ticks: {
+                                                            color: '#666',
+                                                            font: { size: 12, weight: '600' },
+                                                            callback: function(value) {
+                                                                return '$' + value;
+                                                            }
+                                                        },
+                                                        grid: {
+                                                            color: 'rgba(0,0,0,0.08)'
+                                                        }
+                                                    },
+                                                    x: {
+                                                        ticks: {
+                                                            color: '#333',
+                                                            font: { size: 13, weight: '700' }
+                                                        },
+                                                        grid: {
+                                                            display: false
+                                                        }
+                                                    }
+                                                },
+                                                animation: {
+                                                    duration: 1500,
+                                                    easing: 'easeInOutQuart'
+                                                }
+                                            }
+                                        });
+                                    }
+                                })();
+                                </script>
+
+                                <p style="color: var(--of-text-light); margin-bottom: 25px; font-size: 1rem; line-height: 1.8;">
+                                    Nossa estratégia de <strong style="color: var(--of-text);">precificação premium</strong> 💎 começou testando diferentes preços por região na Rodada 2, mas depois padronizamos em <strong>$23,50/litro</strong> para todas as regiões onde atuamos. Os preços elevados refletem a exclusividade e alta tecnologia do nosso produto – afinal, <em>qualidade premium tem seu preço</em>! 🔥
+                                </p>
+
+                                <p style="color: var(--of-text-light); margin-bottom: 25px; font-size: 1rem; line-height: 1.8;">
+                                    <strong style="color: #E53935;">Rodada 2:</strong> Tivemos dificuldades iniciais com vendas devido ao posicionamento premium. A resposta? <strong style="color: var(--of-text);">Cortamos gastos operacionais</strong> e otimizamos processos para manter nossas margens sem comprometer a qualidade. 💪
+                                </p>
+
+                                <p style="color: var(--of-text-light); margin-bottom: 25px; font-size: 1rem; line-height: 1.8;">
+                                    <strong style="color: #FF6F00;">Rodada 3:</strong> Ajustamos preços estrategicamente para aumentar penetração, mantendo o caráter premium. Foi nosso momento de <em>seduzir mais clientes</em> sem perder a exclusividade. 😏
+                                </p>
+
+                                <p style="color: var(--of-text-light); margin-bottom: 25px; font-size: 1rem; line-height: 1.8;">
+                                    <strong style="color: #C62828;">Rodada 4:</strong> Mantivemos $23,50/L em todas as regiões. Crescimento explosivo: R1=11.59%, R4=11.59%! Vendas de 9.590K, mas investimentos massivos em P&D + Marketing  resultaram em prejuízo. 📦⚠️
+                                </p>
+
+                                <!-- Estratégia de Precificação -->
+                                <div style="background: linear-gradient(135deg, rgba(0,175,240,0.15) 0%, rgba(0,175,240,0.05) 100%); padding: 25px; border-radius: 12px; border-left: 4px solid var(--of-blue); margin-top: 30px;">
+                                    <h4 style="color: var(--of-blue); font-size: 1.2rem; margin-bottom: 15px;">📊 Evolução da Estratégia Premium</h4>
+                                    <ul style="list-style: none; padding: 0;">
+                                        <li style="color: var(--of-text-light); padding: 10px 0; border-bottom: 1px solid var(--of-border); display: flex; align-items: center;">
+                                            <span style="color: var(--of-blue); margin-right: 10px; font-size: 1.2rem;">�</span>
+                                            <span><strong style="color: var(--of-text);">Rodada 2:</strong> Preços premium altos ($21,61 - $30,51/L) + Corte de gastos operacionais</span>
+                                        </li>
+                                        <li style="color: var(--of-text-light); padding: 10px 0; border-bottom: 1px solid var(--of-border); display: flex; align-items: center;">
+                                            <span style="color: var(--of-blue); margin-right: 10px; font-size: 1.2rem;">📉</span>
+                                            <span><strong style="color: var(--of-text);">Rodada 3:</strong> Ajuste tático para $16,91/L - Equilibrando exclusividade e volume</span>
+                                        </li>
+                                        <li style="color: var(--of-text-light); padding: 10px 0; border-bottom: 1px solid var(--of-border); display: flex; align-items: center;">
+                                            <span style="color: var(--of-blue); margin-right: 10px; font-size: 1.2rem;">📈</span>
+                                            <span><strong style="color: var(--of-text);">Rodada 4:</strong> Recuperação para $23,50/L + Sucesso em vendas (estoque zerado!)</span>
+                                        </li>
+                                        <li style="color: var(--of-text-light); padding: 10px 0; display: flex; align-items: center;">
+                                            <span style="color: #E53935; margin-right: 10px; font-size: 1.2rem;">⚠️</span>
+                                            <span><strong style="color: #E53935;">Desafio:</strong> Problemas logísticos causaram prejuízo mesmo com vendas totais</span>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div style="text-align: center; padding: 40px 30px; background-color: rgba(255,255,255,0.03); border-radius: 8px; margin-top: 30px;">
+                                    <i class="fas fa-lock" style="font-size: 3.5rem; color: var(--of-text-light); opacity: 0.5; margin-bottom: 20px; display: block;"></i>
+                                    <button style="background-color: var(--of-blue); color: white; border: none; border-radius: 50px; padding: 14px 50px; font-size: 1rem; font-weight: 700; cursor: pointer; width: 100%; max-width: 500px; font-family: 'Inter', sans-serif; transition: background-color 0.2s ease;">
+                                        SUBSCRIBE TO SEE USER'S POSTS
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="post-actions">
+                                <div class="action-item">
+                                    <i class="far fa-heart"></i> 6254 likes
+                                </div>
+                                <div class="action-item">
+                                    <i class="far fa-comment"></i> Comment
+                                </div>
+                                <div class="action-item">
+                                    <i class="fas fa-dollar-sign"></i> SEND TIP
+                                </div>
+                                <div class="action-item" style="margin-left: auto;">
+                                    <i class="far fa-bookmark"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- POST 7 - PERFORMANCE FINANCEIRA GERAL -->
+                        <div class="post">
+                            <div class="post-header">
+                                <img src="logo-com-escrita.png" alt="Kumbustivel do Saci">
+                                <div>
+                                    <div class="name">Kumbustivel do Saci</div>
+                                    <div class="timestamp">2025/02</div>
+                                </div>
+                            </div>
+                            <div class="post-content">
+                                <h3>💰 PERFORMANCE FINANCEIRA - A Verdade Nua e Crua 🔥</h3>
+                                
+                                <p style="color: var(--of-text-light); margin-bottom: 25px; font-size: 1rem; line-height: 1.8;">
+                                    <em>Análise Premium 18+</em> 💎 | Vamos mostrar TUDO que aconteceu... sem filtros! 😏
+                                </p>
+
+                                <!-- Gráfico Gerencial Simplificado -->
+                                <div style="background: white; padding: 30px; border-radius: 12px; margin-bottom: 30px;">
+                                    <h4 style="color: #333; text-align: center; margin-bottom: 20px; font-size: 1.2rem;">📊 Evolução Financeira Geral</h4>
+                                    <canvas id="chartPerformance" style="max-height: 350px;"></canvas>
+                                </div>
+                                <script>
+                                (function() {
+                                    const ctx = document.getElementById('chartPerformance');
+                                    if (ctx) {
+                                        new Chart(ctx, {
+                                            type: 'line',
+                                            data: {
+                                                labels: ['Rodada 2', 'Rodada 3', 'Rodada 4'],
+                                                datasets: [
+                                                    {
+                                                        label: 'Vendas (K$)',
+                                                        data: [5062, 10612, 9590],
+                                                        borderColor: '#4169E1',
+                                                        backgroundColor: 'rgba(65, 105, 225, 0.1)',
+                                                        borderWidth: 3,
+                                                        tension: 0.4,
+                                                        fill: true,
+                                                        pointRadius: 6,
+                                                        pointHoverRadius: 8
+                                                    },
+                                                    {
+                                                        label: 'Lucro/Prejuízo (K$)',
+                                                        data: [-2393, 3032, -7708],
+                                                        borderColor: '#2E7D32',
+                                                        backgroundColor: 'rgba(46, 125, 50, 0.1)',
+                                                        borderWidth: 3,
+                                                        tension: 0.4,
+                                                        fill: true,
+                                                        pointRadius: 6,
+                                                        pointHoverRadius: 8,
+                                                        segment: {
+                                                            borderColor: function(ctx) {
+                                                                return ctx.p1.parsed.y < 0 ? '#D32F2F' : '#2E7D32';
+                                                            },
+                                                            backgroundColor: function(ctx) {
+                                                                return ctx.p1.parsed.y < 0 ? 'rgba(211, 47, 47, 0.1)' : 'rgba(46, 125, 50, 0.1)';
+                                                            }
+                                                        }
+                                                    }
+                                                ]
+                                            },
+                                            options: {
+                                                responsive: true,
+                                                maintainAspectRatio: true,
+                                                plugins: {
+                                                    legend: {
+                                                        display: true,
+                                                        position: 'bottom',
+                                                        labels: {
+                                                            color: '#333',
+                                                            font: { size: 13, weight: '600' },
+                                                            padding: 15
+                                                        }
+                                                    },
+                                                    tooltip: {
+                                                        backgroundColor: 'rgba(0,0,0,0.8)',
+                                                        padding: 12,
+                                                        titleFont: { size: 14, weight: '700' },
+                                                        bodyFont: { size: 13 }
+                                                    }
+                                                },
+                                                scales: {
+                                                    y: {
+                                                        beginAtZero: false,
+                                                        min: -8000,
+                                                        max: 11000,
+                                                        ticks: {
+                                                            color: '#666',
+                                                            font: { size: 12, weight: '600' },
+                                                            callback: function(value) {
+                                                                return 'K$' + value;
+                                                            }
+                                                        },
+                                                        grid: {
+                                                            color: 'rgba(0,0,0,0.08)'
+                                                        }
+                                                    },
+                                                    x: {
+                                                        ticks: {
+                                                            color: '#333',
+                                                            font: { size: 13, weight: '700' }
+                                                        },
+                                                        grid: {
+                                                            display: false
+                                                        }
+                                                    }
+                                                },
+                                                animation: {
+                                                    duration: 1500,
+                                                    easing: 'easeInOutQuart'
+                                                }
+                                            }
+                                        });
+                                    }
+                                })();
+                                </script>
+
+                                <!-- Análise em Cards -->
+                                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-bottom: 25px;">
+                                    <div style="background: linear-gradient(135deg, rgba(46,125,50,0.15) 0%, rgba(102,187,106,0.05) 100%); padding: 20px; border-radius: 12px; border-left: 4px solid #2E7D32;">
+                                        <h4 style="color: #2E7D32; font-size: 1.1rem; margin-bottom: 10px;">✅ R3: LUCRATIVO!</h4>
+                                        <p style="color: var(--of-text-light); font-size: 0.9rem;">Faturamento de 10.612K + Lucro de 3.032K = Sucesso! 🔥💚</p>
+                                    </div>
+                                    
+                                    <div style="background: linear-gradient(135deg, rgba(211,47,47,0.15) 0%, rgba(239,83,80,0.05) 100%); padding: 20px; border-radius: 12px; border-left: 4px solid #D32F2F;">
+                                        <h4 style="color: #D32F2F; font-size: 1.1rem; margin-bottom: 10px;">❌ R2 e R4: PREJUÍZO!</h4>
+                                        <p style="color: var(--of-text-light); font-size: 0.9rem;">R2: -2.393K | R4: -7.708K por altos investimentos 💸</p>
+                                    </div>
+                                </div>
+
+                                <!-- Conclusão Premium -->
+                                <div style="background: linear-gradient(135deg, rgba(0,175,240,0.15) 0%, rgba(0,175,240,0.05) 100%); padding: 25px; border-radius: 12px; border-left: 4px solid var(--of-blue); margin-top: 30px;">
+                                    <h4 style="color: var(--of-blue); font-size: 1.2rem; margin-bottom: 15px;">💎 Lição Premium Aprendida:</h4>
+                                    <p style="color: var(--of-text-light); line-height: 1.8;">
+                                        <strong style="color: var(--of-text);">Vendas crescentes não garantem lucro!</strong> Nossas receitas cresceram de 5.062K (R2) para 10.612K (R3), mas na R4 caíram para 9.590K. O problema? Investimentos massivos em P&D, Publicidade e Salários na R4 causaram prejuízo! 😰💸
+                                    </p>
+                                </div>
+
+                                <div style="text-align: center; padding: 40px 30px; background-color: rgba(255,255,255,0.03); border-radius: 8px; margin-top: 30px;">
+                                    <i class="fas fa-lock" style="font-size: 3.5rem; color: var(--of-text-light); opacity: 0.5; margin-bottom: 20px; display: block;"></i>
+                                    <button style="background-color: var(--of-blue); color: white; border: none; border-radius: 50px; padding: 14px 50px; font-size: 1rem; font-weight: 700; cursor: pointer; width: 100%; max-width: 500px; font-family: 'Inter', sans-serif; transition: background-color 0.2s ease;">
+                                        SUBSCRIBE TO SEE USER'S POSTS
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="post-actions">
+                                <div class="action-item">
+                                    <i class="far fa-heart"></i> 7423 likes
+                                </div>
+                                <div class="action-item">
+                                    <i class="far fa-comment"></i> Comment
+                                </div>
+                                <div class="action-item">
+                                    <i class="fas fa-dollar-sign"></i> SEND TIP
+                                </div>
+                                <div class="action-item" style="margin-left: auto;">
+                                    <i class="far fa-bookmark"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- POST 8 - EVOLUÇÃO DE VENDAS POR REGIÃO -->
+                        <div class="post">
+                            <div class="post-header">
+                                <img src="logo-com-escrita.png" alt="Kumbustivel do Saci">
+                                <div>
+                                    <div class="name">Kumbustivel do Saci</div>
+                                    <div class="timestamp">2025/02</div>
+                                </div>
+                            </div>
+                            <div class="post-content">
+                                <h3>📈 VENDAS POR REGIÃO - Quem Domina o Mapa? 🗺️🔥</h3>
+                                
+                                <p style="color: var(--of-text-light); margin-bottom: 25px; font-size: 1rem; line-height: 1.8;">
+                                    Vamos mostrar onde nosso produto premium <em>realmente pegou fogo</em>! 💎 Cada região tem sua vibe... e seus números! 😏
+                                </p>
+
+                                <!-- Gráfico de Vendas Empilhadas -->
+                                <div style="background: white; padding: 30px; border-radius: 12px; margin-bottom: 30px;">
+                                    <h4 style="color: #333; text-align: center; margin-bottom: 20px; font-size: 1.2rem;">Evolução de Vendas por Região</h4>
+                                    <canvas id="chartVendas" style="max-height: 350px;"></canvas>
+                                </div>
+                                <script>
+                                (function() {
+                                    const ctx = document.getElementById('chartVendas');
+                                    if (ctx) {
+                                        new Chart(ctx, {
+                                            type: 'bar',
+                                            data: {
+                                                labels: ['Rodada 2', 'Rodada 3'],
+                                                datasets: [
+                                                    {
+                                                        label: 'Região 1',
+                                                        data: [90, 180],
+                                                        backgroundColor: '#7CB342',
+                                                        borderColor: '#558B2F',
+                                                        borderWidth: 2
+                                                    },
+                                                    {
+                                                        label: 'Região 3',
+                                                        data: [70, 120],
+                                                        backgroundColor: '#8E24AA',
+                                                        borderColor: '#6A1B9A',
+                                                        borderWidth: 2
+                                                    },
+                                                    {
+                                                        label: 'Região 4',
+                                                        data: [160, 280],
+                                                        backgroundColor: '#C2185B',
+                                                        borderColor: '#880E4F',
+                                                        borderWidth: 2
+                                                    }
+                                                ]
+                                            },
+                                            options: {
+                                                responsive: true,
+                                                maintainAspectRatio: true,
+                                                plugins: {
+                                                    legend: {
+                                                        display: true,
+                                                        position: 'bottom',
+                                                        labels: {
+                                                            color: '#333',
+                                                            font: { size: 13, weight: '600' },
+                                                            padding: 15
+                                                        }
+                                                    },
+                                                    tooltip: {
+                                                        backgroundColor: 'rgba(0,0,0,0.8)',
+                                                        padding: 12,
+                                                        titleFont: { size: 14, weight: '700' },
+                                                        bodyFont: { size: 13 },
+                                                        callbacks: {
+                                                            label: function(context) {
+                                                                return context.dataset.label + ': ' + context.parsed.y + 'K litros';
+                                                            },
+                                                            footer: function(tooltipItems) {
+                                                                var sum = 0;
+                                                                for (var i = 0; i < tooltipItems.length; i++) {
+                                                                    sum += tooltipItems[i].parsed.y;
+                                                                }
+                                                                return 'Total: ' + sum + 'K litros';
+                                                            }
+                                                        }
+                                                    }
+                                                },
+                                                scales: {
+                                                    y: {
+                                                        stacked: true,
+                                                        beginAtZero: true,
+                                                        max: 600,
+                                                        ticks: {
+                                                            color: '#666',
+                                                            font: { size: 12, weight: '600' },
+                                                            callback: function(value) {
+                                                                return value + 'K';
+                                                            }
+                                                        },
+                                                        grid: {
+                                                            color: 'rgba(0,0,0,0.08)'
+                                                        }
+                                                    },
+                                                    x: {
+                                                        stacked: true,
+                                                        ticks: {
+                                                            color: '#333',
+                                                            font: { size: 13, weight: '700' }
+                                                        },
+                                                        grid: {
+                                                            display: false
+                                                        }
+                                                    }
+                                                },
+                                                animation: {
+                                                    duration: 1500,
+                                                    easing: 'easeInOutQuart'
+                                                }
+                                            }
+                                        });
+                                    }
+                                })();
+                                </script>
+
+                                <!-- Destaques -->
+                                <div style="background: linear-gradient(135deg, rgba(194,24,91,0.15) 0%, rgba(240,98,146,0.05) 100%); padding: 25px; border-radius: 12px; border-left: 4px solid #C2185B; margin-bottom: 25px;">
+                                    <h4 style="color: #C2185B; font-size: 1.2rem; margin-bottom: 15px;">👑 REGIÃO 4: A RAINHA DAS VENDAS!</h4>
+                                    <p style="color: var(--of-text-light); line-height: 1.8;">
+                                        Olha só! A <strong style="color: var(--of-text);">Região 4</strong> dominou praticamente sozinha! 💪 Público jovem, tecnológico e que ADORA produtos premium. É onde nosso biocombustível exclusivo fez SUCESSO absoluto! R3 foi o pico: mais de 600K em vendas só nessa região! 🚀🔥
+                                    </p>
+                                </div>
+
+                                <div style="background: linear-gradient(135deg, rgba(0,175,240,0.15) 0%, rgba(0,175,240,0.05) 100%); padding: 25px; border-radius: 12px; border-left: 4px solid var(--of-blue); margin-top: 30px;">
+                                    <h4 style="color: var(--of-blue); font-size: 1.2rem; margin-bottom: 15px;">📊 Resumo das Vendas:</h4>
+                                    <ul style="list-style: none; padding: 0;">
+                                        <li style="color: var(--of-text-light); padding: 10px 0; border-bottom: 1px solid var(--of-border); display: flex; align-items: center;">
+                                            <span style="color: var(--of-blue); margin-right: 10px; font-size: 1.2rem;">🥇</span>
+                                            <span><strong style="color: var(--of-text);">Região 4:</strong> Líder absoluta - dominância premium!</span>
+                                        </li>
+                                        <li style="color: var(--of-text-light); padding: 10px 0; border-bottom: 1px solid var(--of-border); display: flex; align-items: center;">
+                                            <span style="color: var(--of-blue); margin-right: 10px; font-size: 1.2rem;">🥈</span>
+                                            <span><strong style="color: var(--of-text);">Região 1:</strong> Crescimento consistente e sólido</span>
+                                        </li>
+                                        <li style="color: var(--of-text-light); padding: 10px 0; display: flex; align-items: center;">
+                                            <span style="color: var(--of-blue); margin-right: 10px; font-size: 1.2rem;">🥉</span>
+                                            <span><strong style="color: var(--of-text);">Região 3:</strong> Participação menor mas presente</span>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div style="text-align: center; padding: 40px 30px; background-color: rgba(255,255,255,0.03); border-radius: 8px; margin-top: 30px;">
+                                    <i class="fas fa-lock" style="font-size: 3.5rem; color: var(--of-text-light); opacity: 0.5; margin-bottom: 20px; display: block;"></i>
+                                    <button style="background-color: var(--of-blue); color: white; border: none; border-radius: 50px; padding: 14px 50px; font-size: 1rem; font-weight: 700; cursor: pointer; width: 100%; max-width: 500px; font-family: 'Inter', sans-serif; transition: background-color 0.2s ease;">
+                                        SUBSCRIBE TO SEE USER'S POSTS
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="post-actions">
+                                <div class="action-item">
+                                    <i class="far fa-heart"></i> 8591 likes
+                                </div>
+                                <div class="action-item">
+                                    <i class="far fa-comment"></i> Comment
+                                </div>
+                                <div class="action-item">
+                                    <i class="fas fa-dollar-sign"></i> SEND TIP
+                                </div>
+                                <div class="action-item" style="margin-left: auto;">
+                                    <i class="far fa-bookmark"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- POST 9 - DESPESAS E PROBLEMAS LOGÍSTICOS -->
+                        <div class="post">
+                            <div class="post-header">
+                                <img src="logo-com-escrita.png" alt="Kumbustivel do Saci">
+                                <div>
+                                    <div class="name">Kumbustivel do Saci</div>
+                                    <div class="timestamp">2025/02</div>
+                                </div>
+                            </div>
+                            <div class="post-content">
+                                <h3>💸 DESPESAS - O Que Nos Custou Caro! 📦⚠️</h3>
+                                
+                                <p style="color: var(--of-text-light); margin-bottom: 25px; font-size: 1rem; line-height: 1.8;">
+                                    <strong style="color: #D32F2F;">AVISO:</strong> Conteúdo explícito sobre gastos! 💰 Vamos mostrar onde o dinheiro foi... e onde doeu mais! 😰
+                                </p>
+
+                                <!-- Gráfico de Despesas -->
+                                <div style="background: white; padding: 30px; border-radius: 12px; margin-bottom: 30px;">
+                                    <h4 style="color: #333; text-align: center; margin-bottom: 20px; font-size: 1.2rem;">Evolução das Principais Despesas</h4>
+                                    <canvas id="chartDespesas" style="max-height: 350px;"></canvas>
+                                </div>
+                                <script>
+                                (function() {
+                                    const ctx = document.getElementById('chartDespesas');
+                                    if (ctx) {
+                                        new Chart(ctx, {
+                                            type: 'bar',
+                                            data: {
+                                                labels: ['Rodada 2', 'Rodada 3', 'Rodada 4'],
+                                                datasets: [
+                                                    {
+                                                        label: 'Custo Fixo Produção',
+                                                        data: [600, 750, 750],
+                                                        backgroundColor: '#FF6B6B',
+                                                        borderColor: '#FF4757',
+                                                        borderWidth: 2
+                                                    },
+                                                    {
+                                                        label: 'Transporte',
+                                                        data: [19.66, 59.39, 33.30],
+                                                        backgroundColor: function(context) {
+                                                            const index = context.dataIndex;
+                                                            return index === 2 ? '#FFA726' : '#FFA726';
+                                                        },
+                                                        borderColor: function(context) {
+                                                            const index = context.dataIndex;
+                                                            return index === 2 ? '#F57C00' : '#F57C00';
+                                                        },
+                                                        borderWidth: 2
+                                                    },
+                                                    {
+                                                        label: 'P&D',
+                                                        data: [1800, 0, 4500],
+                                                        backgroundColor: '#00BCD4',
+                                                        borderColor: '#0097A7',
+                                                        borderWidth: 2
+                                                    },
+                                                    {
+                                                        label: 'Marketing',
+                                                        data: [1123.76, 3044.14, 6079.29],
+                                                        backgroundColor: '#9C27B0',
+                                                        borderColor: '#7B1FA2',
+                                                        borderWidth: 2
+                                                    },
+                                                    {
+                                                        label: 'Salários',
+                                                        data: [350, 418.1, 543.9],
+                                                        backgroundColor: '#4CAF50',
+                                                        borderColor: '#388E3C',
+                                                        borderWidth: 2
+                                                    }
+                                                ]
+                                            },
+                                            options: {
+                                                responsive: true,
+                                                maintainAspectRatio: true,
+                                                plugins: {
+                                                    legend: {
+                                                        display: true,
+                                                        position: 'bottom',
+                                                        labels: {
+                                                            color: '#333',
+                                                            font: { size: 13, weight: '600' },
+                                                            padding: 15
+                                                        }
+                                                    },
+                                                    tooltip: {
+                                                        backgroundColor: 'rgba(0,0,0,0.8)',
+                                                        padding: 12,
+                                                        titleFont: { size: 14, weight: '700' },
+                                                        bodyFont: { size: 13 },
+                                                        callbacks: {
+                                                            label: function(context) {
+                                                                var label = context.dataset.label || '';
+                                                                if (label) {
+                                                                    label += ': ';
+                                                                }
+                                                                label += '$' + context.parsed.y + 'K';
+                                                                if (context.dataIndex === 2 && context.datasetIndex === 1) {
+                                                                    label += ' 📦💥 EXPLOSÃO!';
+                                                                }
+                                                                return label;
+                                                            }
+                                                        }
+                                                    }
+                                                },
+                                                scales: {
+                                                    y: {
+                                                        beginAtZero: true,
+                                                        max: 7000,
+                                                        ticks: {
+                                                            color: '#666',
+                                                            font: { size: 12, weight: '600' },
+                                                            callback: function(value) {
+                                                                return '$' + value + 'K';
+                                                            }
+                                                        },
+                                                        grid: {
+                                                            color: 'rgba(0,0,0,0.08)'
+                                                        }
+                                                    },
+                                                    x: {
+                                                        ticks: {
+                                                            color: '#333',
+                                                            font: { size: 13, weight: '700' }
+                                                        },
+                                                        grid: {
+                                                            display: false
+                                                        }
+                                                    }
+                                                },
+                                                animation: {
+                                                    duration: 1500,
+                                                    easing: 'easeInOutQuart'
+                                                }
+                                            }
+                                        });
+                                    }
+                                })();
+                                </script>
+
+                                <!-- Explicação do Problema -->
+                                <div style="background: linear-gradient(135deg, rgba(211,47,47,0.2) 0%, rgba(239,83,80,0.1) 100%); padding: 30px; border-radius: 12px; border: 3px solid #D32F2F; margin-bottom: 25px;">
+                                    <h4 style="color: #D32F2F; font-size: 1.3rem; margin-bottom: 15px; text-align: center;">🚨 ANÁLISE DAS DESPESAS 🚨</h4>
+                                    <p style="color: var(--of-text); line-height: 1.8; font-size: 1rem; margin-bottom: 15px;">
+                                        <strong>Custo Fixo de Produção:</strong> Mantido estável em 600K na R2, aumentou para 750K nas R3 e R4. 🏭
+                                    </p>
+                                    <p style="color: var(--of-text); line-height: 1.8; font-size: 1rem; margin-bottom: 15px;">
+                                        <strong>Transporte (Logística):</strong> R2=19.66K, R3=59.39K, R4=33.30K. Na verdade REDUZIU na R4! Logística não foi o problema! 📦✅
+                                    </p>
+                                    <p style="color: var(--of-text); line-height: 1.8; font-size: 1rem; margin-bottom: 15px;">
+                                        <strong>P&D:</strong> R2=1.800K, R3=0K, R4=4.500K. Investimento massivo em inovação! 🔬💎
+                                    </p>
+                                    <p style="color: var(--of-text); line-height: 1.8; font-size: 1rem; margin-bottom: 15px;">
+                                        <strong style="color: #9C27B0;">Marketing:</strong> 💥 ESTE FOI O VILÃO! R2=1.123K, R3=3.044K, R4=6.079K. Cresceu 100% de R3 pra R4! 📣�
+                                    </p>
+                                    <p style="color: var(--of-text); line-height: 1.8; font-size: 1rem;">
+                                        <strong style="color: #4CAF50;">Salários:</strong> R2=418K, R3=544K, R4=1.217K. TRIPLICOU na R4! Contratações em massa! 👔�
+                                    </p>
+                                </div>
+
+                                <!-- Lição -->
+                                <div style="background: linear-gradient(135deg, rgba(0,175,240,0.15) 0%, rgba(0,175,240,0.05) 100%); padding: 25px; border-radius: 12px; border-left: 4px solid var(--of-blue); margin-top: 30px;">
+                                    <h4 style="color: var(--of-blue); font-size: 1.2rem; margin-bottom: 15px;">💡 O Que REALMENTE Causou o Prejuízo de R$ 7.708K na R4:</h4>
+                                    <p style="color: var(--of-text-light); line-height: 1.8;">
+                                        <strong style="color: var(--of-text);">1. Marketing:</strong> 6.079K (cresceu 100%!) 💸<br>
+                                        <strong style="color: var(--of-text);">2. P&D:</strong> 4.500K (apostamos pesado em inovação!) 🔬<br>
+                                        <strong style="color: var(--of-text);">3. Salários:</strong> 1.217K 👔<br><br>
+                                        <strong style="color: #D32F2F;">Total só nesses 3:</strong> 11.796K de despesas extras! Foi uma aposta agressiva em crescimento que não se pagou na R4. 🎲💥
+                                    </p>
+                                </div>
+
+                                <div style="text-align: center; padding: 40px 30px; background-color: rgba(255,255,255,0.03); border-radius: 8px; margin-top: 30px;">
+                                    <i class="fas fa-lock" style="font-size: 3.5rem; color: var(--of-text-light); opacity: 0.5; margin-bottom: 20px; display: block;"></i>
+                                    <button style="background-color: var(--of-blue); color: white; border: none; border-radius: 50px; padding: 14px 50px; font-size: 1rem; font-weight: 700; cursor: pointer; width: 100%; max-width: 500px; font-family: 'Inter', sans-serif; transition: background-color 0.2s ease;">
+                                        SUBSCRIBE TO SEE USER'S POSTS
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="post-actions">
+                                <div class="action-item">
+                                    <i class="far fa-heart"></i> 9874 likes
+                                </div>
+                                <div class="action-item">
+                                    <i class="far fa-comment"></i> Comment
+                                </div>
+                                <div class="action-item">
+                                    <i class="fas fa-dollar-sign"></i> SEND TIP
+                                </div>
+                                <div class="action-item" style="margin-left: auto;">
+                                    <i class="far fa-bookmark"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="post">
+                            <div class="post-header">
+                                <img src="logo.png" alt="Kumbustivel Avatar" class="post-avatar">
+                                <div style="flex: 1;">
+                                    <div style="display: flex; align-items: center; gap: 6px;">
+                                        <div class="post-user">
+                                            <span style="font-weight: 700;">Kumbustivel do Saci</span>
+                                            <i class="fas fa-check-circle" style="color: var(--of-blue); font-size: 14px;"></i>
+                                        </div>
+                                    </div>
+                                    <div class="timestamp">2025/02</div>
+                                </div>
+                            </div>
+                            <div class="post-content">
+                                <h3 style="color: var(--of-blue); margin-bottom: 20px; font-size: 22px;">👑 FUTURO DA EMPRESA</h3>
+                                
+                                <p style="margin-bottom: 25px; line-height: 1.6;">
+                                    O futuro é agora! Nossos planos de expansão e inovação 🚀💰
+                                </p>
+
+                                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-bottom: 25px;">
+                                    <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 20px; border-radius: 12px; text-align: center;">
+                                        <div style="font-size: 32px; margin-bottom: 10px;">👑</div>
+                                        <h4 style="font-size: 16px; margin-bottom: 8px;">Liderança de Mercado</h4>
+                                        <p style="font-size: 13px; opacity: 0.9;">Expandir para novas regiões</p>
+                                    </div>
+
+                                    <div style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); padding: 20px; border-radius: 12px; text-align: center;">
+                                        <div style="font-size: 32px; margin-bottom: 10px;">💰</div>
+                                        <h4 style="font-size: 16px; margin-bottom: 8px;">ROI Máximo</h4>
+                                        <p style="font-size: 13px; opacity: 0.9;">Otimização de processos</p>
+                                    </div>
+
+                                    <div style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); padding: 20px; border-radius: 12px; text-align: center;">
+                                        <div style="font-size: 32px; margin-bottom: 10px;">🔬</div>
+                                        <h4 style="font-size: 16px; margin-bottom: 8px;">Inovação</h4>
+                                        <p style="font-size: 13px; opacity: 0.9;">Novas tecnologias</p>
+                                    </div>
+
+                                    <div style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%); padding: 20px; border-radius: 12px; text-align: center;">
+                                        <div style="font-size: 32px; margin-bottom: 10px;">🌱</div>
+                                        <h4 style="font-size: 16px; margin-bottom: 8px;">Sustentabilidade</h4>
+                                        <p style="font-size: 13px; opacity: 0.9;">Carbono neutro em 2025</p>
+                                    </div>
+                                </div>
+
+                                <div style="background: rgba(0, 175, 240, 0.1); border-left: 4px solid var(--of-blue); padding: 15px; border-radius: 8px; margin-bottom: 25px;">
+                                    <h4 style="color: var(--of-blue); margin-bottom: 12px; font-size: 16px;">📋 Próximos Passos:</h4>
+                                    <ul style="list-style: none; padding: 0; margin: 0;">
+                                        <li style="padding: 8px 0; border-bottom: 1px solid rgba(255,255,255,0.1);">
+                                            <i class="fas fa-check" style="color: var(--of-blue); margin-right: 10px;"></i>
+                                            Expansão para Região 02
+                                        </li>
+                                        <li style="padding: 8px 0; border-bottom: 1px solid rgba(255,255,255,0.1);">
+                                            <i class="fas fa-check" style="color: var(--of-blue); margin-right: 10px;"></i>
+                                            Aumento de capacidade produtiva
+                                        </li>
+                                        <li style="padding: 8px 0; border-bottom: 1px solid rgba(255,255,255,0.1);">
+                                            <i class="fas fa-check" style="color: var(--of-blue); margin-right: 10px;"></i>
+                                            Parcerias estratégicas
+                                        </li>
+                                        <li style="padding: 8px 0;">
+                                            <i class="fas fa-check" style="color: var(--of-blue); margin-right: 10px;"></i>
+                                            Investimento em P&D
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="post-actions">
+                                <div class="action-item">
+                                    <i class="fas fa-heart"></i> 9874
+                                </div>
+                                <div class="action-item">
+                                    <i class="far fa-comment"></i> Comment
+                                </div>
+                                <div class="action-item">
+                                    <i class="fas fa-dollar-sign"></i> SEND TIP
+                                </div>
+                                <div class="action-item" style="margin-left: auto;">
+                                    <i class="far fa-bookmark"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- POST 10 - EBITDA E FLUXO DE CAIXA -->
+                        <div class="post">
+                            <div class="post-header">
+                                <img src="logo.png" alt="Kumbustivel Avatar" class="post-avatar">
+                                <div style="flex: 1;">
+                                    <div style="display: flex; align-items: center; gap: 6px;">
+                                        <div class="post-user">
+                                            <span style="font-weight: 700;">Kumbustivel do Saci</span>
+                                            <i class="fas fa-check-circle" style="color: var(--of-blue); font-size: 14px;"></i>
+                                        </div>
+                                    </div>
+                                    <div class="timestamp">2025/02</div>
+                                </div>
+                            </div>
+                            <div class="post-content">
+                                <h3 style="color: var(--of-blue); margin-bottom: 20px; font-size: 22px;">💰 SAÚDE FINANCEIRA: EBITDA & FLUXO DE CAIXA</h3>
+                                
+                                <p style="font-size: 16px; line-height: 1.8; margin-bottom: 25px;">
+                                    Tá na hora de mostrar a <strong>saúde real</strong> do nosso conteúdo premium 🔥💦 
+                                    O <strong>EBITDA</strong> mostra nossa capacidade de <em>gozar... digo, gerar</em> lucro operacional antes de impostos e amortizações, 
+                                    enquanto o <strong>Fluxo de Caixa</strong> revela quanto dinheiro líquido realmente <em>entra e sai</em> 💸
+                                </p>
+
+                                <!-- Chart: EBITDA vs Fluxo de Caixa -->
+                                <div style="background: white; padding: 25px; border-radius: 12px; margin-bottom: 20px; box-shadow: 0 4px 20px rgba(0,0,0,0.08);">
+                                    <h4 style="font-size: 16px; margin-bottom: 20px; text-align: center; color: #333;">EBITDA vs Fluxo de Caixa (K$)</h4>
+                                    <canvas id="chartEBITDA" style="max-height: 350px;"></canvas>
+                                </div>
+                                <script>
+                                (function() {
+                                    const ctx = document.getElementById('chartEBITDA');
+                                    if (ctx) {
+                                        new Chart(ctx, {
+                                            type: 'bar',
+                                            data: {
+                                                labels: ['Rodada 2', 'Rodada 3', 'Rodada 4'],
+                                                datasets: [
+                                                    {
+                                                        label: 'EBITDA (Lucro Operacional)',
+                                                        data: [180, 250, 280],
+                                                        backgroundColor: '#00BCD4',
+                                                        borderColor: '#0097A7',
+                                                        borderWidth: 2
+                                                    },
+                                                    {
+                                                        label: 'Fluxo de Caixa',
+                                                        data: [150, 220, -80],
+                                                        backgroundColor: function(context) {
+                                                            const value = context.dataset.data[context.dataIndex];
+                                                            return value < 0 ? '#D32F2F' : '#4169E1';
+                                                        },
+                                                        borderColor: function(context) {
+                                                            const value = context.dataset.data[context.dataIndex];
+                                                            return value < 0 ? '#B71C1C' : '#2952CC';
+                                                        },
+                                                        borderWidth: 2
+                                                    }
+                                                ]
+                                            },
+                                            options: {
+                                                responsive: true,
+                                                maintainAspectRatio: true,
+                                                plugins: {
+                                                    legend: {
+                                                        display: true,
+                                                        position: 'bottom',
+                                                        labels: {
+                                                            color: '#333',
+                                                            font: { size: 12, weight: '600' },
+                                                            padding: 15
+                                                        }
+                                                    },
+                                                    tooltip: {
+                                                        backgroundColor: 'rgba(0,0,0,0.8)',
+                                                        padding: 12,
+                                                        titleFont: { size: 14, weight: '700' },
+                                                        bodyFont: { size: 13 },
+                                                        callbacks: {
+                                                            label: function(context) {
+                                                                var label = context.dataset.label || '';
+                                                                if (label) {
+                                                                    label += ': ';
+                                                                }
+                                                                label += '$' + context.parsed.y + 'K';
+                                                                if (context.parsed.y < 0 && context.datasetIndex === 1) {
+                                                                    label += ' ⚠️ NEGATIVO!';
+                                                                }
+                                                                return label;
+                                                            }
+                                                        }
+                                                    }
+                                                },
+                                                scales: {
+                                                    y: {
+                                                        beginAtZero: true,
+                                                        min: -100,
+                                                        max: 300,
+                                                        ticks: {
+                                                            color: '#666',
+                                                            font: { size: 12, weight: '600' },
+                                                            callback: function(value) {
+                                                                return '$' + value + 'K';
+                                                            }
+                                                        },
+                                                        grid: {
+                                                            color: function(context) {
+                                                                return context.tick.value === 0 ? 'rgba(0,0,0,0.3)' : 'rgba(0,0,0,0.08)';
+                                                            },
+                                                            lineWidth: function(context) {
+                                                                return context.tick.value === 0 ? 2 : 1;
+                                                            }
+                                                        }
+                                                    },
+                                                    x: {
+                                                        ticks: {
+                                                            color: '#333',
+                                                            font: { size: 13, weight: '700' }
+                                                        },
+                                                        grid: {
+                                                            display: false
+                                                        }
+                                                    }
+                                                },
+                                                animation: {
+                                                    duration: 1500,
+                                                    easing: 'easeInOutQuart'
+                                                }
+                                            }
+                                        });
+                                    }
+                                })();
+                                </script>
+
+                                <!-- Analysis -->
+                                <div style="background: white; padding: 30px; border-radius: 12px; border: 3px solid #00BCD4; margin-bottom: 25px; box-shadow: 0 4px 20px rgba(0,188,212,0.2);">
+                                    <h4 style="font-size: 1.4rem; margin-bottom: 20px; color: #00BCD4; text-align: center; font-weight: 800;">📊 Análise: O Problema da Liquidez</h4>
+                                    <div style="font-size: 1.05rem; line-height: 1.9; color: #222;">
+                                        <p style="margin-bottom: 18px; background: rgba(0,188,212,0.08); padding: 20px; border-radius: 10px; border-left: 5px solid #00BCD4;">
+                                            💡 <strong style="color: #00BCD4; font-size: 1.1rem;">O paradoxo da R4:</strong> Nosso <strong style="color: #00BCD4;">EBITDA cresceu</strong> de 180K (R2) para 280K (R4) — tá gostoso de ver! 
+                                            Mas o <strong style="color: #D32F2F;">Fluxo de Caixa despencou</strong> de 150K para <span style="color: #D32F2F; font-weight: 900; font-size: 1.15rem;">-80K 😱</span>
+                                        </p>
+                                        <p style="margin-bottom: 18px; background: rgba(211,47,47,0.08); padding: 20px; border-radius: 10px; border-left: 5px solid #D32F2F;">
+                                            🚨 <strong style="color: #D32F2F; font-size: 1.1rem;">Por quê?</strong> As <em style="color: #D32F2F; font-weight: 700;">despesas de logística</em> explodiram na R4 (aquele gráfico de transporte que vocês viram) 📦💥. 
+                                            Mesmo vendendo MUITO e tendo lucro operacional alto, o <strong>dinheiro não chegava no caixa</strong> por causa dos custos de entrega.
+                                        </p>
+                                        <p style="margin: 0; background: linear-gradient(135deg, rgba(0,175,240,0.1), rgba(65,105,225,0.1)); padding: 20px; border-radius: 10px; border: 2px solid var(--of-blue);">
+                                            💦 <strong style="color: var(--of-blue); font-size: 1.1rem;">Moral da história:</strong> EBITDA alto não significa que você está nadando em dinheiro! 
+                                            Precisa controlar o <em style="font-weight: 700; color: var(--of-blue);">fluxo de caixa</em> senão fica durinho na hora errada... 🍆💸
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <!-- Key Metrics -->
+                                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px;">
+                                    <div style="background: rgba(0,188,212,0.15); border: 2px solid #00BCD4; padding: 18px; border-radius: 12px; text-align: center;">
+                                        <div style="font-size: 32px; margin-bottom: 8px;">📈</div>
+                                        <div style="font-size: 22px; font-weight: 700; color: #00BCD4; margin-bottom: 5px;">+56%</div>
+                                        <div style="font-size: 12px; opacity: 0.9;">Crescimento EBITDA<br/>(R2 → R4)</div>
+                                    </div>
+                                    <div style="background: rgba(211,47,47,0.15); border: 2px solid #D32F2F; padding: 18px; border-radius: 12px; text-align: center;">
+                                        <div style="font-size: 32px; margin-bottom: 8px;">⚠️</div>
+                                        <div style="font-size: 22px; font-weight: 700; color: #D32F2F; margin-bottom: 5px;">-153%</div>
+                                        <div style="font-size: 12px; opacity: 0.9;">Queda Fluxo Caixa<br/>(R2 → R4)</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="post-actions">
+                                <div class="action-item">
+                                    <i class="fas fa-heart"></i> 8720
+                                </div>
+                                <div class="action-item">
+                                    <i class="far fa-comment"></i> Comment
+                                </div>
+                                <div class="action-item">
+                                    <i class="fas fa-dollar-sign"></i> SEND TIP
+                                </div>
+                                <div class="action-item" style="margin-left: auto;">
+                                    <i class="far fa-bookmark"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- POST 11 - FUTURO DO MUNDO -->
+                        <div class="post">
+                            <div class="post-header">
+                                <img src="logo.png" alt="Kumbustivel Avatar" class="post-avatar">
+                                <div style="flex: 1;">
+                                    <div style="display: flex; align-items: center; gap: 6px;">
+                                        <div class="post-user">
+                                            <span style="font-weight: 700;">Kumbustivel do Saci</span>
+                                            <i class="fas fa-check-circle" style="color: var(--of-blue); font-size: 14px;"></i>
+                                        </div>
+                                    </div>
+                                    <div class="timestamp">2025/02</div>
+                                </div>
+                            </div>
+                            <div class="post-content">
+                                <h3 style="color: var(--of-blue); margin-bottom: 20px; font-size: 22px;">🌍 FUTURO DO MUNDO</h3>
+                                
+                                <div style="text-align: center; margin-bottom: 25px;">
+                                    <div style="font-size: 80px; margin-bottom: 15px;">🌍</div>
+                                    <h4 style="font-size: 24px; margin-bottom: 15px; background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; font-weight: 900;">
+                                        UM PLANETA MAIS VERDE
+                                    </h4>
+                                    <p style="font-size: 16px; line-height: 1.8; max-width: 600px; margin: 0 auto;">
+                                        Nosso compromisso vai além dos lucros. Estamos construindo um futuro sustentável para as próximas gerações. 🌱✨
+                                    </p>
+                                </div>
+
+                                <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 15px; margin-bottom: 25px;">
+                                    <div style="background: rgba(67, 233, 123, 0.15); border: 2px solid #43e97b; padding: 20px; border-radius: 12px; text-align: center;">
+                                        <div style="font-size: 28px; margin-bottom: 10px;">♻️</div>
+                                        <h5 style="font-size: 14px; color: #43e97b; margin-bottom: 5px;">100%</h5>
+                                        <p style="font-size: 12px; opacity: 0.8;">Reciclável</p>
+                                    </div>
+
+                                    <div style="background: rgba(56, 249, 215, 0.15); border: 2px solid #38f9d7; padding: 20px; border-radius: 12px; text-align: center;">
+                                        <div style="font-size: 28px; margin-bottom: 10px;">🌿</div>
+                                        <h5 style="font-size: 14px; color: #38f9d7; margin-bottom: 5px;">-80%</h5>
+                                        <p style="font-size: 12px; opacity: 0.8;">Emissões CO₂</p>
+                                    </div>
+
+                                    <div style="background: rgba(0, 175, 240, 0.15); border: 2px solid var(--of-blue); padding: 20px; border-radius: 12px; text-align: center;">
+                                        <div style="font-size: 28px; margin-bottom: 10px;">💧</div>
+                                        <h5 style="font-size: 14px; color: var(--of-blue); margin-bottom: 5px;">-60%</h5>
+                                        <p style="font-size: 12px; opacity: 0.8;">Uso de Água</p>
+                                    </div>
+                                </div>
+
+                                <div style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%); padding: 25px; border-radius: 12px; margin-bottom: 25px;">
+                                    <h4 style="font-size: 18px; margin-bottom: 15px; text-align: center;">🎯 Nossa Missão</h4>
+                                    <p style="font-size: 14px; line-height: 1.7; text-align: center; margin: 0;">
+                                        "Fornecer energia limpa e renovável, reduzindo o impacto ambiental e promovendo um futuro sustentável para todos. Juntos, podemos fazer a diferença!" 🌟
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="post-actions">
+                                <div class="action-item">
+                                    <i class="fas fa-heart"></i> 11250
+                                </div>
+                                <div class="action-item">
+                                    <i class="far fa-comment"></i> Comment
+                                </div>
+                                <div class="action-item">
+                                    <i class="fas fa-dollar-sign"></i> SEND TIP
+                                </div>
+                                <div class="action-item" style="margin-left: auto;">
+                                    <i class="far fa-bookmark"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- POST 12 - AGRADECIMENTOS -->
+                        <div class="post">
+                            <div class="post-header">
+                                <img src="logo.png" alt="Kumbustivel Avatar" class="post-avatar">
+                                <div style="flex: 1;">
+                                    <div style="display: flex; align-items: center; gap: 6px;">
+                                        <div class="post-user">
+                                            <span style="font-weight: 700;">Kumbustivel do Saci</span>
+                                            <i class="fas fa-check-circle" style="color: var(--of-blue); font-size: 14px;"></i>
+                                        </div>
+                                    </div>
+                                    <div class="timestamp">2025/02</div>
+                                </div>
+                            </div>
+                            <div class="post-content">
+                                <div style="text-align: center; margin-bottom: 35px;">
+                                    <div style="font-size: 100px; margin-bottom: 25px; filter: drop-shadow(0 0 30px rgba(67, 233, 123, 0.6));">🌿</div>
+                                    
+                                    <h3 style="font-size: 32px; margin-bottom: 15px; background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; font-weight: 900; letter-spacing: 1px;">
+                                        KUMBUSTÍVEL DO SACI
+                                    </h3>
+                                    
+                                    <p style="font-size: 20px; color: var(--of-blue); font-weight: 600; margin-bottom: 30px;">
+                                        Obrigado por fazer parte desta jornada! 🙏✨
+                                    </p>
+                                </div>
+
+                                <!-- Card Principal -->
+                                <div style="background: linear-gradient(135deg, rgba(67, 233, 123, 0.1) 0%, rgba(56, 249, 215, 0.1) 100%); border: 2px solid rgba(67, 233, 123, 0.3); border-radius: 16px; padding: 35px; margin-bottom: 30px;">
+                                    <p style="font-size: 17px; line-height: 1.9; margin-bottom: 25px; text-align: center;">
+                                        Agradecemos a todos que nos apoiaram nessa trajetória incrível. Juntos, estamos construindo um futuro mais sustentável! 🌍💚
+                                    </p>
+                                    
+                                    <div style="display: flex; justify-content: center; gap: 12px; flex-wrap: wrap; margin-top: 25px;">
+                                        <span style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 10px 20px; border-radius: 25px; font-size: 14px; font-weight: 600; box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);">
+                                            #Sustentabilidade
+                                        </span>
+                                        <span style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%); padding: 10px 20px; border-radius: 25px; font-size: 14px; font-weight: 600; box-shadow: 0 4px 15px rgba(67, 233, 123, 0.3);">
+                                            #Biocombustível
+                                        </span>
+                                        <span style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); padding: 10px 20px; border-radius: 25px; font-size: 14px; font-weight: 600; box-shadow: 0 4px 15px rgba(240, 147, 251, 0.3);">
+                                            #FuturoVerde
+                                        </span>
+                                        <span style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); padding: 10px 20px; border-radius: 25px; font-size: 14px; font-weight: 600; box-shadow: 0 4px 15px rgba(79, 172, 254, 0.3);">
+                                            #EnergiaLimpa
+                                        </span>
+                                    </div>
+                                </div>
+
+                                <!-- Emoji Section -->
+                                <div style="text-align: center; margin: 35px 0;">
+                                    <div style="font-size: 60px; letter-spacing: 20px; filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.2));">
+                                        🙏 ❤️ 🌟
+                                    </div>
+                                </div>
+
+                                <!-- Team Credit -->
+                                <div style="text-align: center; margin-bottom: 30px;">
+                                    <p style="font-size: 16px; color: var(--of-text-light); font-style: italic;">
+                                        Com carinho,
+                                    </p>
+                                    <p style="font-size: 18px; color: var(--of-blue); font-weight: 700; margin-top: 5px;">
+                                        Equipe Kumbustivel do Saci
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="post-actions">
+                                <div class="action-item">
+                                    <i class="fas fa-heart"></i> 15732
+                                </div>
+                                <div class="action-item">
+                                    <i class="far fa-comment"></i> Comment
+                                </div>
+                                <div class="action-item">
+                                    <i class="fas fa-dollar-sign"></i> SEND TIP
+                                </div>
+                                <div class="action-item" style="margin-left: auto;">
+                                    <i class="far fa-bookmark"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </main> 
+            
+            <aside class="sidebar-right">
+                <!-- Barra de Pesquisa -->
+                <div style="position: relative; margin-bottom: 30px;">
+                    <input type="text" placeholder="Search user's post" style="width: 100%; padding: 10px 15px 10px 40px; background-color: var(--of-card-bg); border: 1px solid var(--of-border); border-radius: 50px; color: var(--of-text); font-size: 0.9rem; font-family: 'Inter', sans-serif;">
+                    <i class="fas fa-search" style="position: absolute; left: 15px; top: 50%; transform: translateY(-50%); color: var(--of-text-light); font-size: 0.9rem;"></i>
+                </div>
+
+                <!-- Seção de Assinatura -->
+                <div style="margin-bottom: 30px;">
+                    <h3 style="font-size: 0.85rem; color: var(--of-text-light); margin-bottom: 15px; text-transform: uppercase; letter-spacing: 1px; font-weight: 600;">SUBSCRIPTION</h3>
+                    <button style="background-color: var(--of-blue); color: white; border: none; border-radius: 50px; padding: 12px 30px; font-size: 1rem; font-weight: 700; cursor: pointer; width: 100%; font-family: 'Inter', sans-serif; display: flex; align-items: center; justify-content: space-between; transition: background-color 0.2s ease;">
+                        <span>SUBSCRIBE</span>
+                        <span>FOR FREE</span>
+                    </button>
+                </div>
+
+                <h2>Sugestões para Você</h2>
+
+                <div class="profile-list-item">
+                    <div class="pfp" style="background-image: url('logo.png/00aff0/FFFFFF?text=G')"></div>
+                    <div class="info">
+                        <div class="name">Gustavo Guedes</div>
+                        <div class="username">@Produção</div>
+                    </div>
+                    <button class="follow-btn">Seguindo</button>
+                </div>
+
+                <div class="profile-list-item">
+                    <div class="pfp" style="background-image: url('logo.png/00aff0/FFFFFF?text=E')"></div>
+                    <div class="info">
+                        <div class="name">Eduardo Immig</div>
+                        <div class="username">@Marketing</div>
+                    </div>
+                    <button class="follow-btn">Assinar</button>
+                </div>
+
+                <div class="profile-list-item">
+                    <div class="pfp" style="background-image: url('logo.png/cccccc/000000?text=G')"></div>
+                    <div class="info">
+                        <div class="name">Guilherme Bernieri</div>
+                        <div class="username">@Financeiro</div>
+                    </div>
+                    <button class="follow-btn">Assinar</button>
+                </div>
+
+                <div class="profile-list-item">
+                    <div class="pfp" style="background-image: url('logo.png/cccccc/000000?text=A')"></div>
+                    <div class="info">
+                        <div class="name">Alonso</div>
+                        <div class="username">@RH</div>
+                    </div>
+                    <button class="follow-btn">Assinar</button>
+                </div>
+
+                <div class="profile-list-item">
+                    <div class="pfp" style="background-image: url('logo.png/cccccc/000000?text=E')"></div>
+                    <div class="info">
+                        <div class="name">Everton</div>
+                        <div class="username">@GerenteGeral</div>
+                    </div>
+                    <button class="follow-btn">Assinar</button>
+                </div>
+
+            </aside> 
+        </div> 
+    </div> 
+
+</body>
+</html>

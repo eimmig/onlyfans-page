@@ -1,0 +1,302 @@
+[
+  {
+    "Empresa": "",
+    "Nome fantasia": "",
+    "Valor": ""
+  },
+  {
+    "Empresa": "2508201 - 01",
+    "Nome fantasia": "PIRARUKU",
+    "Valor": "18.29"
+  },
+  {
+    "Empresa": "2508202 - 01",
+    "Nome fantasia": "Kuverde",
+    "Valor": "22"
+  },
+  {
+    "Empresa": "2508203 - 01",
+    "Nome fantasia": "Takaroku",
+    "Valor": "20.5"
+  },
+  {
+    "Empresa": "2508204 - 01",
+    "Nome fantasia": "GiriKu On Bio",
+    "Valor": "15.99"
+  },
+  {
+    "Empresa": "2508205 - 01",
+    "Nome fantasia": "Kuraguei",
+    "Valor": "20.6"
+  },
+  {
+    "Empresa": "2508206 - 01",
+    "Nome fantasia": "kunareta",
+    "Valor": "23"
+  },
+  {
+    "Empresa": "2508207 - 01",
+    "Nome fantasia": "Bio Kumaroto",
+    "Valor": "21.98"
+  },
+  {
+    "Empresa": "2508208 - 01",
+    "Nome fantasia": "Power Guido SA",
+    "Valor": "21"
+  },
+  {
+    "Empresa": "2508209 - 01",
+    "Nome fantasia": "Kura Verde",
+    "Valor": "19"
+  },
+  {
+    "Empresa": "2508210 - 01",
+    "Nome fantasia": "Belessa",
+    "Valor": "30.55"
+  },
+  {
+    "Empresa": "2508211 - 01",
+    "Nome fantasia": "Kukimove",
+    "Valor": "0"
+  },
+  {
+    "Empresa": "2508212 - 01",
+    "Nome fantasia": "MetanoKu",
+    "Valor": "22.5"
+  },
+  {
+    "Empresa": "2508213 - 01",
+    "Nome fantasia": "Kukuecofield",
+    "Valor": "17"
+  },
+  {
+    "Empresa": "2508214 - 01",
+    "Nome fantasia": "Kumbustível do Saci",
+    "Valor": "23.5"
+  },
+  {
+    "Empresa": "",
+    "Nome fantasia": "",
+    "Valor": ""
+  },
+  {
+    "Empresa": "2508201 - 02",
+    "Nome fantasia": "PIRARUKU",
+    "Valor": "15.09"
+  },
+  {
+    "Empresa": "2508202 - 02",
+    "Nome fantasia": "Kuverde",
+    "Valor": "20.14"
+  },
+  {
+    "Empresa": "2508203 - 02",
+    "Nome fantasia": "Takaroku",
+    "Valor": "0"
+  },
+  {
+    "Empresa": "2508204 - 02",
+    "Nome fantasia": "GiriKu On Bio",
+    "Valor": "14.09"
+  },
+  {
+    "Empresa": "2508205 - 02",
+    "Nome fantasia": "Kuraguei",
+    "Valor": "21.86"
+  },
+  {
+    "Empresa": "2508206 - 02",
+    "Nome fantasia": "kunareta",
+    "Valor": "21"
+  },
+  {
+    "Empresa": "2508207 - 02",
+    "Nome fantasia": "Bio Kumaroto",
+    "Valor": "19.67"
+  },
+  {
+    "Empresa": "2508208 - 02",
+    "Nome fantasia": "Power Guido SA",
+    "Valor": "0"
+  },
+  {
+    "Empresa": "2508209 - 02",
+    "Nome fantasia": "Kura Verde",
+    "Valor": "18"
+  },
+  {
+    "Empresa": "2508210 - 02",
+    "Nome fantasia": "Belessa",
+    "Valor": "0"
+  },
+  {
+    "Empresa": "2508211 - 02",
+    "Nome fantasia": "Kukimove",
+    "Valor": "27"
+  },
+  {
+    "Empresa": "2508212 - 02",
+    "Nome fantasia": "MetanoKu",
+    "Valor": "0"
+  },
+  {
+    "Empresa": "2508213 - 02",
+    "Nome fantasia": "Kukuecofield",
+    "Valor": "17"
+  },
+  {
+    "Empresa": "2508214 - 02",
+    "Nome fantasia": "Kumbustível do Saci",
+    "Valor": "0"
+  },
+  {
+    "Empresa": "",
+    "Nome fantasia": "",
+    "Valor": ""
+  },
+  {
+    "Empresa": "2508201 - 03",
+    "Nome fantasia": "PIRARUKU",
+    "Valor": "17.29"
+  },
+  {
+    "Empresa": "2508202 - 03",
+    "Nome fantasia": "Kuverde",
+    "Valor": "22"
+  },
+  {
+    "Empresa": "2508203 - 03",
+    "Nome fantasia": "Takaroku",
+    "Valor": "20.99"
+  },
+  {
+    "Empresa": "2508204 - 03",
+    "Nome fantasia": "GiriKu On Bio",
+    "Valor": "15.19"
+  },
+  {
+    "Empresa": "2508205 - 03",
+    "Nome fantasia": "Kuraguei",
+    "Valor": "21.02"
+  },
+  {
+    "Empresa": "2508206 - 03",
+    "Nome fantasia": "kunareta",
+    "Valor": "23"
+  },
+  {
+    "Empresa": "2508207 - 03",
+    "Nome fantasia": "Bio Kumaroto",
+    "Valor": "21.98"
+  },
+  {
+    "Empresa": "2508208 - 03",
+    "Nome fantasia": "Power Guido SA",
+    "Valor": "21"
+  },
+  {
+    "Empresa": "2508209 - 03",
+    "Nome fantasia": "Kura Verde",
+    "Valor": "21.5"
+  },
+  {
+    "Empresa": "2508210 - 03",
+    "Nome fantasia": "Belessa",
+    "Valor": "29.97"
+  },
+  {
+    "Empresa": "2508211 - 03",
+    "Nome fantasia": "Kukimove",
+    "Valor": "27"
+  },
+  {
+    "Empresa": "2508212 - 03",
+    "Nome fantasia": "MetanoKu",
+    "Valor": "23"
+  },
+  {
+    "Empresa": "2508213 - 03",
+    "Nome fantasia": "Kukuecofield",
+    "Valor": "18"
+  },
+  {
+    "Empresa": "2508214 - 03",
+    "Nome fantasia": "Kumbustível do Saci",
+    "Valor": "23.5"
+  },
+  {
+    "Empresa": "",
+    "Nome fantasia": "",
+    "Valor": ""
+  },
+  {
+    "Empresa": "2508201 - 04",
+    "Nome fantasia": "PIRARUKU",
+    "Valor": "18.89"
+  },
+  {
+    "Empresa": "2508202 - 04",
+    "Nome fantasia": "Kuverde",
+    "Valor": "20.14"
+  },
+  {
+    "Empresa": "2508203 - 04",
+    "Nome fantasia": "Takaroku",
+    "Valor": "21.85"
+  },
+  {
+    "Empresa": "2508204 - 04",
+    "Nome fantasia": "GiriKu On Bio",
+    "Valor": "16.09"
+  },
+  {
+    "Empresa": "2508205 - 04",
+    "Nome fantasia": "Kuraguei",
+    "Valor": "21.86"
+  },
+  {
+    "Empresa": "2508206 - 04",
+    "Nome fantasia": "kunareta",
+    "Valor": "21"
+  },
+  {
+    "Empresa": "2508207 - 04",
+    "Nome fantasia": "Bio Kumaroto",
+    "Valor": "0"
+  },
+  {
+    "Empresa": "2508208 - 04",
+    "Nome fantasia": "Power Guido SA",
+    "Valor": "21"
+  },
+  {
+    "Empresa": "2508209 - 04",
+    "Nome fantasia": "Kura Verde",
+    "Valor": "0"
+  },
+  {
+    "Empresa": "2508210 - 04",
+    "Nome fantasia": "Belessa",
+    "Valor": "29.68"
+  },
+  {
+    "Empresa": "2508211 - 04",
+    "Nome fantasia": "Kukimove",
+    "Valor": "27"
+  },
+  {
+    "Empresa": "2508212 - 04",
+    "Nome fantasia": "MetanoKu",
+    "Valor": "20.85"
+  },
+  {
+    "Empresa": "2508213 - 04",
+    "Nome fantasia": "Kukuecofield",
+    "Valor": "18"
+  },
+  {
+    "Empresa": "2508214 - 04",
+    "Nome fantasia": "Kumbustível do Saci",
+    "Valor": "23.5"
+  }
+]
